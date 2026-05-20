@@ -208,7 +208,7 @@
 | `modal.reframe.situation.body` | Body | Unscripted video conversation with the co-founder of a robotics-enabled construction startup that needed to articulate a complex story spanning AI, prefab manufacturing, and business operations innovation. |
 | `modal.reframe.outcome.label` | Label | Outcome |
 | `modal.reframe.outcome.body` | Body | A tight 30 min interview that articulates Reframes full story - technology, market, and vision - in plain language. Used for PR, recruiting, and GTM alignment |
-| `modal.reframe.placeholder.video` | https://www.youtube.com/watch?v=FPPJ4673UKQ |
+| `modal.reframe.placeholder.video` | YouTube embed (lazy-loaded iframe): FPPJ4673UKQ |
 
 ---
 
