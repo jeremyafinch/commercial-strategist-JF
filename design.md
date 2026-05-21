@@ -57,12 +57,14 @@ font-family: 'IBM Plex Mono', ui-monospace, monospace;
 
 ### Type Scale
 
+Four levels in `styles.css`: **display** (Plex Sans uppercase), **subhead** (Plex 18px sentence case, POV kicker only), **body** (Inter 15px), **meta** (Plex Mono 11–13px labels, CTAs, pills).
+
 ```
 /* Section eyebrow labels */
-font-family: Inter;
+font-family: IBM Plex Mono;
 font-size: 11px;
 font-weight: 500;
-letter-spacing: 0.12em;
+letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--color-text-muted);
 
@@ -86,19 +88,25 @@ text-transform: uppercase;
 color: var(--color-text-primary);
 max-width: 52rem;
 
-/* Card titles */
+/* POV kicker (subhead) */
 font-family: IBM Plex Sans;
 font-size: 18px;
 font-weight: 600;
-text-transform: uppercase;
-letter-spacing: 0.03em;
+line-height: 1.35;
+color: var(--color-text-primary);
+
+/* Card titles (POV + work) */
+font-family: Inter;
+font-size: 15px;
+font-weight: 500;
+line-height: 1.45;
 color: var(--color-text-primary);
 
 /* Body copy */
 font-family: Inter;
 font-size: 15px;
 font-weight: 400;
-line-height: 1.7;
+line-height: 1.65;
 color: var(--color-text-body);
 
 /* Small body / card descriptors */
@@ -136,17 +144,24 @@ color: var(--color-text-muted);
 --space-sm:   16px
 --space-md:   32px
 --space-lg:   64px
---space-xl:   120px
+--space-xl:   96px
 --space-xxl:  180px
+--space-gutter: 80px (24px mobile)
+--stack-tight: 8px
+--stack-default: 16px
+--stack-relaxed: 24px
+--stack-section: 32px
 ```
 
 ### Section Rhythm
-- Padding top/bottom on every section: `var(--space-xl)` (120px minimum)
-- Between section eyebrow label and headline: `var(--space-sm)` (16px)
-- Between headline and body paragraph: `var(--space-md)` (32px)
-- Between cards in a grid: `var(--space-md)` (32px gap)
+- Section padding: `var(--space-section-y)` vertical, `var(--space-gutter)` horizontal (96px / 80px desktop; 64px / 24px mobile)
+- Hero: slightly tighter top (`--space-hero-top`) and bottom (`--space-hero-bottom`)
+- POV follows hero with reduced top padding (`--space-lg`)
+- Eyebrow → next block: `--stack-default` (16px); eyebrow → grid/about: total 32px via sibling margin
+- Headline → body: `--stack-relaxed` (24px); prose → grid: 32px total
+- Between cards in a grid: `var(--space-md)` (32px gap; 24px on mobile)
 - Max content width: `1100px`, centered with `auto` margins
-- Body copy max-width: `640px` (never full-width - keeps line length readable)
+- Body copy max-width: `640px` (hero lede uses same measure)
 
 ---
 

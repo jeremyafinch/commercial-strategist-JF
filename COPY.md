@@ -28,8 +28,10 @@
 | `hero.headline.primary` | Headline (black, uppercase on site) | You're the expert in the technology. |
 | `hero.headline.accent` | Headline (grey, uppercase on site) | I'll help craft the story. |
 | `hero.lede` | Body | Early-stage product marketing and commercial strategy for technical founders building new, high-value, hard-to-explain things. |
+| `hero.prompt` | Prompt (mono, before CTA) | Working on something complex and consequential? |
 | `hero.cta` | Button | Let's chat about what you're building → |
 | `hero.logos.label` | Eyebrow | Previously |
+| `hero.logos.file` | Image | img/logos.png |
 | `hero.logos.alt` | Image alt text | Altitude, Adobe, HubSpot, and MIT Sloan |
 
 ---
@@ -39,8 +41,10 @@
 | LOCATION | Type | Copy |
 |----------|------|------|
 | `pov.eyebrow` | Eyebrow | Point of view |
+| `pov.kicker` | Kicker (between eyebrow and headline) | Marketing isn't just the last mile. |
 | `pov.headline` | Headline (uppercase on site) | If you wait until it's ready, you're already too late. |
-| `pov.body` | Body | In long, capital-intensive development cycles, every conversation needs to count. The market story has to grow alongside your core tech - not just get bolted on at the end. |
+| `pov.body` | Body | Hard tech doesn't ship on two-week cycles. In long, capital-intensive development startups, you get way fewer shots. That's why the market story has to grow and evolve alongside your core tech - not just get bolted on at the very end. |
+| `pov.research` | Body (before POV cards) | Customer, competitor, and user research shape what you build - not just how you sell. |
 | `pov.caveat` | Body | Marketing can't fix underlying technology, your org design, or any legal / IP problems. But a GTM voice belongs in the room early - especially as your product is still being built. |
 
 ### POV cards
@@ -50,7 +54,7 @@
 | `pov.card.01.title` | Finding partners | A partner narrative opens early doors that cold outreach never can. |
 | `pov.card.02.title` | Attracting talent | Mission and story are part of recruiting and compensation strategy. |
 | `pov.card.03.title` | Extending the runway | A clear, distinct investor narrative helps you raise faster, on better terms. |
-| `pov.card.04.title` | Understanding the market | Customer and competitor research shapes what you build, not just how to sell. |
+| `pov.card.04.title` | Entering new verticals | Your second market needs positioning before you've finished the first. |
 | `pov.card.05.title` | Crafting a narrative | Adjacent industries, regulators, acquirers - each needs a variation on the story. |
 | `pov.card.06.title` | Building social proof | Case studies and proof points can take years to build. Start early. |
 
@@ -129,12 +133,13 @@
 | LOCATION | Type | Copy |
 |----------|------|------|
 | `about.eyebrow` | Eyebrow | About |
-| `about.visible` | Body (always shown) | My skillset is in cross-functional translation - across hardware and software, public companies and startups, as an employee and as an adviser - between the people who build the technology and the audiences who need to fund, partner with, or bet on it. |
+| `about.visible` | Body (always shown) | I help founders, technologists, and deep domain experts translate between technical depth and the commercial clarity needed to raise, hire, partner, grow, and eventually sell. |
 | `about.toggle.collapsed` | Button | + Background |
 | `about.toggle.expanded` | Button | − Less |
-| `about.expanded.01` | Body (hidden until expanded) | Studied @ MIT Sloan (MBA, 2017). Worked at Adobe, HubSpot, and Altitude (an industrial design firm). Much of my career has been spent working with technologists and domain experts who struggle to communicate what they see as obvious, intuitive, and self-evident. |
+| `about.expanded.01` | Body (hidden until expanded) | MIT Sloan (MBA, 2017). Worked at Adobe, HubSpot, and Altitude (an industrial design firm). Much of my career has been spent working with smart people who struggle to communicate to others what they see as obvious, intuitive, and self-evident. |
 | `about.expanded.02` | Body (hidden until expanded) | Open to FT roles or advisory work where commercial strategy is part of the build. |
 | `about.expanded.link` | Link label | jeremyafinch.com |
+| `about.photo.file` | Image | img/photo.jpg |
 | `about.photo.alt` | Image alt text | Jeremy Finch |
 
 ---
@@ -143,7 +148,8 @@
 
 | LOCATION | Type | Copy |
 |----------|------|------|
-| `contact.headline` | Headline (uppercase on site) | Let's talk? |
+| `contact.headline` | Headline (uppercase on site) | Sound like your situation? |
+| `contact.intro` | Body | If the technology is genuine but the commercial story is still being figured out - (line break) I'd love to connect. |
 | `contact.cta` | Button | Schedule a call → |
 
 ---
@@ -155,6 +161,7 @@
 | `footer.brand` | Meta | Jeremy Finch · Boston, MA |
 | `footer.linkedin` | Link | LinkedIn |
 | `footer.calendly` | Link | Video call |
+| `footer.website` | Link | Website → https://jeremyafinch.com/ |
 
 ---
 
@@ -167,7 +174,7 @@
 | `modal.teradar.situation.body` | Body | Pre-seed advisory engagement with a novel deep tech company that needed to translate differentiated sensor tech into a story investors could fund. Scope included investor narrative development, pitch deck design, and ongoing technical product marketing. |
 | `modal.teradar.outcome.label` | Label | Outcome |
 | `modal.teradar.outcome.body` | Body | Multiple rounds raised at increasing valuations. Exited stealth publicly in 2025. Worked closely with Teradar's CEO and SVP of Product. Produced CES demo video content. |
-| `modal.teradar.placeholder.image` | Placeholder (not visible as final copy) | IMAGE PLACEHOLDER: TeraDAR product photo - replace with <img> |
+| `modal.teradar.placeholder.image` | Image | img/work-01.png |
 
 ---
 
@@ -183,7 +190,7 @@
 | `modal.lux.placeholder.testimonial` | “Lux Labs hired Jeremy to support our ClearBright product launch. He helped us overhaul our e-commerce approach by redesigning our website, simplifying our pricing and packaging, and creating new marketing content. He helped us step back and evaluate how to communicate with our customers.”  
 <br>
 - Spencer Powers (CEO, Lux Labs)|
-| `modal.lux.placeholder.image` | Placeholder | IMAGE PLACEHOLDER: Lux Labs product photo - replace with <img> |
+| `modal.lux.placeholder.image` | Image | img/work-02.png |
 
 ---
 
@@ -193,10 +200,10 @@
 |----------|------|------|
 | `modal.preipo.title` | Title | IPO Multimedia Roadshow |
 | `modal.preipo.situation.label` | Label | Situation |
-| `modal.preipo.situation.body` | Body | Consulting project for a privately held tech company that needed a video series to anchor their pre-IPO institutional investor roadshow - a high stakes, regulated process on a compressed timeline. |
+| `modal.preipo.situation.body` | Body | Consulting project for a private tech company that needed a video series to anchor their pre-IPO institutional investor roadshow - a high-stakes, regulated process, on a compressed timeline. |
 | `modal.preipo.outcome.label` | Label | Outcome |
 | `modal.preipo.outcome.body` | Body | The company ultimately pivoted from IPO to a private equity raise approach due to market conditions. But the fundraise succeeded. And the narrative held through the pivot. |
-| `modal.preipo.note` | Note | Company name withheld - confidential. |
+| `modal.preipo.placeholder.image` | Image | img/work-03.jpg |
 
 ---
 
@@ -208,7 +215,7 @@
 | `modal.reframe.situation.label` | Label | Situation |
 | `modal.reframe.situation.body` | Body | I recorded an unscripted video conversation with the co-founder of a robotics-enabled construction startup (Reframe Systems) that needed to articulate a complex story spanning AI, prefab manufacturing, and BizOps innovation. |
 | `modal.reframe.outcome.label` | Label | Outcome |
-| `modal.reframe.outcome.body` | Body | Produced and edited a tight 30 min interview that articulates Reframe's full narrative - their technology, market, and vision - in plain language. Used for PR / media, recruiting, and GTM alignment. |
+| `modal.reframe.outcome.body` | Body | Produced and edited a 30 min interview to articulate Reframe's full narrative - technology, market, and vision - in plain language. Used for PR / media, recruiting, and GTM alignment. |
 | `modal.reframe.placeholder.video` | YouTube embed (lazy-loaded iframe): FPPJ4673UKQ |
 
 ---
@@ -217,12 +224,12 @@
 
 | LOCATION | Type | Copy |
 |----------|------|------|
-| `modal.altitude.title` | Title | Major medical device company |
+| `modal.altitude.title` | Title | Medical device company |
 | `modal.altitude.situation.label` | Label | Situation |
-| `modal.altitude.situation.body` | Body | FT user research work at Altitude, an industrial design firm (acq by Accenture). Conducted in-context qualitative research and technical / product roadmapping for a medical device manufacturer navigating complex regulatory and clinical requirements related to aging independently at home. |
+| `modal.altitude.situation.body` | Body | FT user research at Altitude, an industrial design firm (acq, Accenture). Did in-context qualitative research and technical / product roadmapping for a medical device manufacturer navigating complex clinical requirements related to seniors aging independently at home. |
 | `modal.altitude.outcome.label` | Label | Outcome |
 | `modal.altitude.outcome.body` | Body | Research findings shaped product direction for the next generation of fall alert solutions and informed M&A acquisition priorities for adjacent connected care technologies. |
-| `modal.altitude.placeholder.image` | Placeholder | IMAGE PLACEHOLDER: Altitude Research photo - replace with <img> |
+| `modal.altitude.placeholder.image` | Image | img/work-04.png |
 
 ---
 
@@ -238,7 +245,23 @@
 | `modal.akeneo.placeholder.testimonial` | “Jeremy delivered an integrated online assessment tool for us that is a key part of our overall GTM strategy. He identified the deliverables and risks, created a roadmap to meet our aggressive timeline, and kept us on track with detailed multimedia updates. We couldn't be happier with the partnership.”
 <br>
 Kristin Naragon (Chief Strategy Officer, Akeneo) |
-| `modal.akeneo.placeholder.image` | Placeholder | IMAGE PLACEHOLDER: Akeneo photo - replace with <img> |
+| `modal.akeneo.placeholder.image` | Image | img/work-05.png |
+
+---
+
+## Asset files (generic public paths)
+
+Editor reference only — not exposed as on-page copy. Map work-01…05 to modals in commit notes or locally; do not use client names in filenames.
+
+| File | Modal / section |
+|------|-----------------|
+| `img/work-01.png` | Teradar |
+| `img/work-02.png` | Lux Labs |
+| `img/work-03.jpg` | Pre-IPO Roadshow |
+| `img/work-04.png` | Altitude |
+| `img/work-05.png` | Akeneo |
+| `img/photo.jpg` | About |
+| `img/logos.png` | Hero logo bar |
 
 ---
 
