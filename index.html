@@ -49,17 +49,33 @@
           <span class="hero-headline__accent">I'll help craft the story.</span>
         </h1>
 
-        <p class="prose prose--narrow hero__lede">
-          Early-stage product marketing and commercial strategy for technical founders building new, high-value, hard-to-explain things.
-        </p>
+        <div id="about" class="hero-intro">
 
-        <p class="hero__prompt">Working on something complex and consequential?</p>
+          <div class="hero-intro__content">
+            <div class="hero__pitch">
+              <p class="prose">Early-stage product marketing and commercial strategy for technical founders building new, high-value, hard-to-explain things.</p>
+              <p class="prose">I help founders, technologists, and deep domain experts translate between technical depth and the commercial clarity needed to raise, hire, partner, grow, and eventually sell.</p>
+              <p class="prose">Working on something complex and consequential?</p>
+            </div>
 
-        <p class="hero__cta-wrap">
-          <a class="cta" href="https://calendly.com/jeremyfinch_meeting/15_min" target="_blank" rel="noopener noreferrer">
-            Let's chat about what you're building →
-          </a>
-        </p>
+            <p class="hero__cta-wrap">
+              <a class="cta" href="https://calendly.com/jeremyfinch_meeting/15_min" target="_blank" rel="noopener noreferrer">
+                Let's chat about what you're building →
+              </a>
+            </p>
+          </div>
+
+          <div class="hero-intro__photo">
+            <img
+              class="hero-intro__photo-img"
+              src="img/photo.jpg"
+              alt="Jeremy Finch"
+              width="480"
+              height="600"
+            >
+          </div>
+
+        </div>
 
         <!-- Logo bar - credentials appear ONCE on the entire page (see design.md) -->
         <div class="logo-bar" aria-label="Previously">
@@ -91,21 +107,21 @@
         </h2>
 
         <p class="prose">
-          Hard tech doesn't ship on two-week cycles. In long, capital-intensive development startups, you get way fewer shots. That's why the market story has to grow and evolve alongside your core tech - not just get bolted on at the very end.
+          Hard tech doesn't ship on two-week cycles. In long, capital-intensive development startups, you get significantly fewer shots. That's why the market story has to grow and evolve alongside your core tech - not just get bolted on at the very end.
         </p>
 
-        <p class="prose pov__research">Customer, competitor, and user research shape what you build - not just how you sell.</p>
+        <p class="prose pov__research">Customer and competitive research should shape what you build - not just how you sell it.</p>
 
         <div class="card-grid card-grid--pov">
 
           <article class="card pov-card">
             <h3 class="pov-card__title">Finding partners</h3>
-            <p class="pov-card__text">A partner narrative opens early doors that cold outreach never can.</p>
+            <p class="pov-card__text">A strategic partner narrative opens early doors that cold outreach never can.</p>
           </article>
 
           <article class="card pov-card">
             <h3 class="pov-card__title">Attracting talent</h3>
-            <p class="pov-card__text">Mission and story are part of recruiting and compensation strategy.</p>
+            <p class="pov-card__text">Mission and story are central to recruiting and compensation strategy.</p>
           </article>
 
           <article class="card pov-card">
@@ -119,7 +135,7 @@
           </article>
 
           <article class="card pov-card">
-            <h3 class="pov-card__title">Crafting a narrative</h3>
+            <h3 class="pov-card__title">Crafting the narratives</h3>
             <p class="pov-card__text">Adjacent industries, regulators, acquirers - each needs a variation on the story.</p>
           </article>
 
@@ -145,29 +161,106 @@
 
         <span id="work-eyebrow" class="eyebrow">Selected work</span>
 
-        <div class="card-grid card-grid--work">
+        <div class="work-featured">
 
-          <!-- Work card 1 - TeraDAR -->
-          <button type="button" class="card work-card" data-modal="teradar" aria-haspopup="dialog">
-            <span class="work-card__tag">Hard tech</span>
-            <span class="work-card__company">Teradar</span>
-            <span class="work-card__descriptor">Investor narrative and product marketing for a terahertz sensing startup.</span>
-            <span class="work-card__pills">
-              <span class="pill">Investor narrative</span>
-              <span class="pill">Technical marketing</span>
-            </span>
-          </button>
+          <!-- Featured - TeraDAR (marquee, fully visible) -->
+          <article class="work-featured__item work-featured__item--marquee" aria-label="TeraDAR case study">
+            <div class="work-featured__content">
+              <span class="work-featured__tag">Hard tech</span>
+              <h3 class="work-featured__title">TeraDAR</h3>
+              <div class="work-featured__sections">
+                <div class="work-featured__section">
+                  <h4 class="work-featured__label">Company</h4>
+                  <p class="work-featured__text">Teradar builds next-generation terahertz sensing that delivers long-range perception as an alternative to radar and LiDAR in safety-critical environments.</p>
+                </div>
+                <div class="work-featured__section">
+                  <h4 class="work-featured__label">What I did</h4>
+                  <p class="work-featured__text">Helped with the seed-stage fundraise: designed the investor pitch deck, coached the CEO on communications, and built a technical appendix used across 50+ early investor meetings.</p>
+                </div>
+                <div class="work-featured__section">
+                  <h4 class="work-featured__label">How it helped</h4>
+                  <p class="work-featured__text">Supported Teradar through Series A and a $150M Series B, then produced technical product marketing videos and CES assets to demonstrate improved sensor capabilities.</p>
+                </div>
+              </div>
+              <div class="work-featured__pills" aria-label="Services">
+                <span class="pill">Investor narrative</span>
+                <span class="pill">Technical marketing</span>
+              </div>
+            </div>
+            <figure class="work-featured__media">
+              <img
+                class="work-featured__img"
+                src="img/work-teradar-techcrunch-feature.png"
+                alt="TechCrunch announcement screenshot featuring Teradar next-generation terahertz sensing fundraising"
+                width="1200"
+                height="675"
+                loading="lazy"
+              >
+              <img
+                class="work-featured__img"
+                src="img/work-teradar-feature.png"
+                alt="Teradar product website screenshot highlighting next-generation terahertz vision capabilities"
+                width="1200"
+                height="675"
+                loading="lazy"
+              >
+            </figure>
+          </article>
 
-          <!-- Work card 2 - Lux Labs -->
-          <button type="button" class="card work-card" data-modal="lux-labs" aria-haspopup="dialog">
-            <span class="work-card__tag">Hard tech</span>
-            <span class="work-card__company">Lux Labs</span>
-            <span class="work-card__descriptor">Building the GTM infrastructure for a new transparent display material.</span>
-            <span class="work-card__pills">
-              <span class="pill">Go-to-market</span>
-              <span class="pill">Pricing strategy</span>
-            </span>
-          </button>
+          <!-- Featured - Lux Labs (fully visible) -->
+          <article class="work-featured__item" aria-label="Lux Labs case study">
+            <div class="work-featured__content">
+              <span class="work-featured__tag">Hard tech</span>
+              <h3 class="work-featured__title">Lux Labs</h3>
+              <div class="work-featured__sections">
+                <div class="work-featured__section">
+                  <h4 class="work-featured__label">Company</h4>
+                  <p class="work-featured__text">Lux Labs built transparent display materials and projection film, and the work was turning technical complexity into a simpler buying story.</p>
+                </div>
+                <div class="work-featured__section">
+                  <h4 class="work-featured__label">What I did</h4>
+                  <p class="work-featured__text">Simplified the ecommerce catalog from ~30 SKUs to two core offers, rebuilt pricing and packaging, and aligned the messaging to drive higher conversion and sales.</p>
+                </div>
+                <div class="work-featured__section">
+                  <h4 class="work-featured__label">How it helped</h4>
+                  <p class="work-featured__text">Improved gross margins, conversions, and sales, delivering about 100% ROI within six weeks. The pricing and packaging strategy stayed intact through acquisition.</p>
+                </div>
+              </div>
+
+              <div class="work-featured__quote" aria-label="Client quote">
+                <p class="work-featured__quote-text">&ldquo;Lux Labs hired Jeremy to support our ClearBright product launch. He helped us overhaul our e-commerce approach by redesigning our website, simplifying our pricing and packaging, and creating new marketing content. He helped us step back and evaluate how to communicate with our customers.&rdquo;</p>
+                <p class="work-featured__quote-meta">Spencer Powers - CEO, Lux Labs</p>
+              </div>
+
+              <div class="work-featured__pills" aria-label="Services">
+                <span class="pill">Go-to-market</span>
+                <span class="pill">Pricing strategy</span>
+              </div>
+            </div>
+            <figure class="work-featured__media">
+              <img
+                class="work-featured__img"
+                src="img/work-lux-feature-02.png"
+                alt="Lux Labs product display screenshot for ClearBright transparent projection film"
+                width="1200"
+                height="675"
+                loading="lazy"
+              >
+              <img
+                class="work-featured__img"
+                src="img/work-lux-feature-01.png"
+                alt="Lux Labs ClearBright product page screenshot"
+                width="1200"
+                height="675"
+                loading="lazy"
+              >
+            </figure>
+          </article>
+
+        </div>
+
+        <div class="work-secondary">
+          <div class="card-grid card-grid--work card-grid--work-secondary" aria-label="Additional work">
 
           <!-- Work card 3 - Pre-IPO Roadshow -->
           <button type="button" class="card work-card" data-modal="pre-ipo" aria-haspopup="dialog">
@@ -213,60 +306,14 @@
             </span>
           </button>
 
+          </div>
         </div>
 
       </div>
     </section>
 
     <!-- ================================================================== -->
-    <!-- SECTION 4 - ABOUT                                                  -->
-    <!-- ================================================================== -->
-    <section id="about" class="section" aria-labelledby="about-eyebrow">
-      <div class="section__inner">
-
-        <span id="about-eyebrow" class="eyebrow">About</span>
-
-        <div class="about-grid">
-
-          <div class="about__text">
-            <p class="prose">
-              I help founders, technologists, and deep domain experts translate between technical depth and the commercial clarity needed to raise, hire, partner, grow, and eventually sell.
-            </p>
-
-            <button type="button" id="about-toggle" class="about__toggle" aria-expanded="false" aria-controls="about-expanded">
-              + Background
-            </button>
-
-            <div id="about-expanded" class="about__expanded" hidden>
-              <p class="prose">
-                MIT Sloan (MBA, 2017). Worked at Adobe, HubSpot, and Altitude (an industrial design firm). Much of my career has been spent working with smart people who struggle to communicate to others what they see as obvious, intuitive, and self-evident.
-              </p>
-              <p class="prose">
-                Open to FT roles or advisory work where commercial strategy is part of the build.
-              </p>
-              <p class="prose">
-                <a href="https://jeremyafinch.com/" target="_blank" rel="noopener noreferrer">jeremyafinch.com</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="about__photo">
-            <img
-              class="about__photo-img"
-              src="img/photo.jpg"
-              alt="Jeremy Finch"
-              width="480"
-              height="600"
-            >
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ================================================================== -->
-    <!-- SECTION 5 - CONTACT                                                -->
+    <!-- SECTION 4 - CONTACT                                                -->
     <!-- ================================================================== -->
     <section id="contact" class="section" aria-labelledby="contact-headline">
       <div class="section__inner">
@@ -275,6 +322,8 @@
 
         <p class="contact__intro prose">If the technology is genuine but the commercial story is still being figured out -<br>
         I'd love to connect.</p>
+
+        <p class="contact__availability prose">Open to FT roles or advisory work where commercial strategy is part of the build.</p>
 
         <p class="contact__cta-wrap">
           <a class="cta" href="https://calendly.com/jeremyfinch_meeting/15_min" target="_blank" rel="noopener noreferrer">

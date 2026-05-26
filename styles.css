@@ -20,7 +20,7 @@
   --space-gutter-mobile: 24px;
   --space-section-y: var(--space-xl);
   --space-hero-top: var(--space-lg);
-  --space-hero-bottom: 48px;
+  --space-hero-bottom: var(--space-lg);
   --space-card-padding: 24px;
 
   /* Vertical rhythm between blocks (8px grid) */
@@ -197,8 +197,7 @@ button:focus-visible,
   color: var(--color-text-primary);
 }
 
-.eyebrow + .card-grid,
-.eyebrow + .about-grid {
+.eyebrow + .card-grid {
   margin-top: calc(var(--stack-section) - var(--stack-default));
 }
 
@@ -251,6 +250,11 @@ button:focus-visible,
 
 .card-grid--work {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.card-grid--work-secondary {
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--stack-relaxed);
 }
 
 .card {
@@ -363,6 +367,136 @@ button.work-card {
 }
 
 /* ==========================================================================
+   Featured work (TeraDAR + Lux)
+   ========================================================================== */
+
+.work-featured {
+  display: grid;
+  gap: var(--space-md);
+  margin-top: calc(var(--stack-section) - var(--stack-default));
+}
+
+.work-featured__item {
+  display: grid;
+  grid-template-columns: 1fr minmax(340px, 460px);
+  gap: var(--space-md);
+  padding: var(--space-card-padding);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  background: var(--color-bg);
+}
+
+.work-featured__item--marquee {
+  border-color: var(--color-text-primary);
+}
+
+.work-featured__content {
+  min-width: 0;
+}
+
+.work-featured__tag {
+  display: block;
+  margin: 0 0 var(--stack-tight);
+  font-family: var(--font-mono);
+  font-size: var(--type-eyebrow);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.work-featured__title {
+  margin: 0 0 var(--stack-relaxed);
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--color-text-primary);
+}
+
+.work-featured__sections {
+  display: grid;
+  gap: var(--stack-default);
+  margin: 0 0 var(--stack-section);
+}
+
+.work-featured__label {
+  margin: 0 0 var(--stack-tight);
+  font-family: var(--font-mono);
+  font-size: var(--type-eyebrow);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.work-featured__text {
+  margin: 0;
+  max-width: 64ch;
+  font-family: var(--font-body);
+  font-size: var(--type-small);
+  line-height: var(--type-line-small);
+  color: var(--color-text-body);
+}
+
+.work-featured__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.work-featured__quote {
+  margin: 0 0 var(--stack-default);
+  padding: var(--stack-relaxed);
+  border: 1px dashed var(--color-border);
+  background: var(--color-surface);
+  border-radius: 3px;
+}
+
+.work-featured__quote-text {
+  margin: 0 0 var(--stack-default);
+  font-family: var(--font-body);
+  font-size: var(--type-small);
+  line-height: var(--type-line-small);
+  color: var(--color-text-body);
+}
+
+.work-featured__quote-meta {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--type-eyebrow);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.work-featured__media {
+  margin: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 3px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+.work-featured__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.work-secondary {
+  margin-top: var(--stack-section);
+  opacity: 0.92;
+}
+
+/* ==========================================================================
    Hero
    ========================================================================== */
 
@@ -381,7 +515,7 @@ button.work-card {
 }
 
 .hero-headline {
-  margin: 0 0 var(--stack-default);
+  margin: 0 0 var(--stack-section);
   max-width: 100%;
   font-size: var(--type-display-hero);
   line-height: var(--type-line-display);
@@ -403,26 +537,57 @@ button.work-card {
   }
 }
 
-.hero__lede {
-  margin: 0 0 var(--stack-tight);
+.hero-intro {
+  display: grid;
+  grid-template-columns: 1fr minmax(160px, 220px);
+  gap: var(--space-md);
+  align-items: start;
+  margin-top: 0;
 }
 
-.hero__prompt {
-  margin: 0 0 var(--stack-section);
+.hero-intro__photo {
+  justify-self: end;
+  max-width: 220px;
+}
+
+.hero-intro__content {
+  min-width: 0;
+}
+
+.hero__pitch {
   max-width: var(--body-copy-max);
-  font-family: var(--font-body);
-  font-size: var(--type-body);
-  font-weight: 400;
-  line-height: var(--type-line-body);
-  color: var(--color-text-primary);
+}
+
+.hero__pitch .prose {
+  margin: 0 0 var(--stack-relaxed);
+}
+
+.hero__pitch .prose:last-child {
+  margin-bottom: 0;
 }
 
 .hero__cta-wrap {
-  margin: 0;
+  margin: var(--stack-relaxed) 0 0;
 }
 
-.logo-bar {
-  margin-top: var(--stack-section);
+.hero-intro__photo-img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.hero .logo-bar {
+  margin-top: var(--stack-relaxed);
+  text-align: center;
+}
+
+.hero .logo-bar__label {
+  margin-bottom: var(--space-xs);
+}
+
+.hero .logo-bar__img {
+  margin-inline: auto;
+  object-position: center center;
 }
 
 .logo-bar__label {
@@ -449,64 +614,6 @@ button.work-card {
 }
 
 /* ==========================================================================
-   About
-   ========================================================================== */
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr minmax(240px, 320px);
-  gap: var(--space-lg);
-  align-items: start;
-}
-
-.about__toggle {
-  display: inline-block;
-  margin-top: var(--stack-section);
-  font-family: var(--font-mono);
-  font-size: var(--type-ui);
-  font-weight: 500;
-  text-transform: uppercase;
-  color: var(--color-text-primary);
-  text-decoration: none;
-  transition: all 0.15s ease;
-}
-
-.about__toggle:hover {
-  color: var(--color-text-muted);
-  text-decoration: underline;
-}
-
-.about__expanded {
-  margin-top: var(--stack-section);
-}
-
-.about__expanded[hidden] {
-  display: none;
-}
-
-.about__expanded .prose {
-  margin-bottom: var(--stack-relaxed);
-}
-
-.about__expanded p:last-child {
-  margin-bottom: 0;
-}
-
-.about__expanded a {
-  color: var(--color-text-primary);
-}
-
-.about__expanded a:hover {
-  color: var(--color-text-muted);
-}
-
-.about__photo-img {
-  width: 100%;
-  height: auto;
-  border-radius: 3px;
-}
-
-/* ==========================================================================
    Contact
    ========================================================================== */
 
@@ -517,6 +624,12 @@ button.work-card {
 }
 
 .contact__intro {
+  margin: 0 0 var(--stack-relaxed);
+  max-width: var(--body-copy-max);
+  color: var(--color-text-body);
+}
+
+.contact__availability {
   margin: 0 0 var(--stack-section);
   max-width: var(--body-copy-max);
   color: var(--color-text-body);
@@ -733,6 +846,14 @@ button.work-card {
   .card-grid--pov {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .card-grid--work-secondary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work-featured__item {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ==========================================================================
@@ -767,12 +888,17 @@ button.work-card {
     grid-template-columns: 1fr;
   }
 
-  .about-grid {
+  .card-grid--work-secondary {
     grid-template-columns: 1fr;
   }
 
-  .about__photo {
-    max-width: 280px;
+  .hero-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-intro__photo {
+    justify-self: start;
+    max-width: 200px;
   }
 
   .logo-bar__img {

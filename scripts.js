@@ -1,5 +1,5 @@
 /**
- * scripts.js - modal open/close and About expand/collapse only.
+ * scripts.js - modal open/close only.
  */
 
 (function () {
@@ -11,7 +11,7 @@
 
   var overlay = document.getElementById("modal-overlay");
   var closeBtn = document.getElementById("modal-close");
-  var workCards = document.querySelectorAll(".work-card");
+  var workCards = document.querySelectorAll(".work-card[data-modal]");
   var modalPanels = document.querySelectorAll(".modal-content");
 
   if (!overlay) return;
@@ -98,21 +98,4 @@
       closeModal();
     }
   });
-
-  /* --------------------------------------------------------------------------
-     About expand / collapse
-     -------------------------------------------------------------------------- */
-
-  var aboutToggle = document.getElementById("about-toggle");
-  var aboutExpanded = document.getElementById("about-expanded");
-
-  if (aboutToggle && aboutExpanded) {
-    aboutToggle.addEventListener("click", function () {
-      var isHidden = aboutExpanded.hidden;
-
-      aboutExpanded.hidden = !isHidden;
-      aboutToggle.setAttribute("aria-expanded", isHidden ? "true" : "false");
-      aboutToggle.textContent = isHidden ? "− Less" : "+ Background";
-    });
-  }
 })();

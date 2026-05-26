@@ -27,9 +27,12 @@
 | `hero.eyebrow` | Eyebrow | Product marketing · commercial strategy |
 | `hero.headline.primary` | Headline (black, uppercase on site) | You're the expert in the technology. |
 | `hero.headline.accent` | Headline (grey, uppercase on site) | I'll help craft the story. |
-| `hero.lede` | Body | Early-stage product marketing and commercial strategy for technical founders building new, high-value, hard-to-explain things. |
-| `hero.prompt` | Prompt (mono, before CTA) | Working on something complex and consequential? |
-| `hero.cta` | Button | Let's chat about what you're building → |
+| `hero.pitch.01` | Body (left of photo in hero) | Early-stage product marketing and commercial strategy for technical founders building new, high-value, hard-to-explain things. |
+| `hero.pitch.02` | Body | I help founders, technologists, and deep domain experts translate between technical depth and the commercial clarity needed to raise, hire, partner, grow, and eventually sell. |
+| `hero.pitch.03` | Body | Working on something complex and consequential? |
+| `hero.cta` | Button (below pitch, left column) | Let's chat about what you're building → |
+| `hero.photo.file` | Image | img/photo.jpg |
+| `hero.photo.alt` | Image alt text | Jeremy Finch |
 | `hero.logos.label` | Eyebrow | Previously |
 | `hero.logos.file` | Image | img/logos.png |
 | `hero.logos.alt` | Image alt text | Altitude, Adobe, HubSpot, and MIT Sloan |
@@ -43,19 +46,19 @@
 | `pov.eyebrow` | Eyebrow | Point of view |
 | `pov.kicker` | Kicker (between eyebrow and headline) | Marketing isn't just the last mile. |
 | `pov.headline` | Headline (uppercase on site) | If you wait until it's ready, you're already too late. |
-| `pov.body` | Body | Hard tech doesn't ship on two-week cycles. In long, capital-intensive development startups, you get way fewer shots. That's why the market story has to grow and evolve alongside your core tech - not just get bolted on at the very end. |
-| `pov.research` | Body (before POV cards) | Customer, competitor, and user research shape what you build - not just how you sell. |
+| `pov.body` | Body | Hard tech doesn't ship on two-week cycles. In long, capital-intensive development startups, you get significantly fewer shots. That's why the market story has to grow and evolve alongside your core tech - not just get bolted on at the very end. |
+| `pov.research` | Body (before POV cards) | Customer and competitive research should shape what you build - not just how you sell it. |
 | `pov.caveat` | Body | Marketing can't fix underlying technology, your org design, or any legal / IP problems. But a GTM voice belongs in the room early - especially as your product is still being built. |
 
 ### POV cards
 
 | LOCATION | Card title | Card body |
 |----------|------------|-----------|
-| `pov.card.01.title` | Finding partners | A partner narrative opens early doors that cold outreach never can. |
-| `pov.card.02.title` | Attracting talent | Mission and story are part of recruiting and compensation strategy. |
+| `pov.card.01.title` | Finding partners | A strategic partner narrative opens early doors that cold outreach never can. |
+| `pov.card.02.title` | Attracting talent | Mission and story are central to recruiting and compensation strategy. |
 | `pov.card.03.title` | Extending the runway | A clear, distinct investor narrative helps you raise faster, on better terms. |
 | `pov.card.04.title` | Entering new verticals | Your second market needs positioning before you've finished the first. |
-| `pov.card.05.title` | Crafting a narrative | Adjacent industries, regulators, acquirers - each needs a variation on the story. |
+| `pov.card.05.title` | Crafting the narratives | Adjacent industries, regulators, acquirers - each needs a variation on the story. |
 | `pov.card.06.title` | Building social proof | Case studies and proof points can take years to build. Start early. |
 
 ---
@@ -75,6 +78,11 @@
 | `work.teradar.descriptor` | Body | Investor narrative and product marketing for a terahertz sensing startup. |
 | `work.teradar.pill.01` | Pill | Investor narrative |
 | `work.teradar.pill.02` | Pill | Technical marketing |
+| `work.teradar.feature.image` | Image | img/work-teradar-techcrunch-feature.png |
+| `work.teradar.feature.image.02` | Image | img/work-teradar-feature.png |
+| `work.teradar.feature.company` | Featured - Company | Teradar builds next-generation terahertz sensing that delivers long-range perception as an alternative to radar and LiDAR in safety-critical environments. |
+| `work.teradar.feature.did` | Featured - What I did | Helped with the seed-stage fundraise: designed the investor pitch deck, coached the CEO on communications, and built a technical appendix used across 50+ early investor meetings. |
+| `work.teradar.feature.helped` | Featured - How it helped | Supported Teradar through Series A and a $150M Series B, then produced technical product marketing videos and CES assets to demonstrate improved sensor capabilities. |
 
 ### Work card: Lux Labs
 
@@ -85,6 +93,13 @@
 | `work.lux.descriptor` | Body | Building the GTM infrastructure for a new transparent display material. |
 | `work.lux.pill.01` | Pill | Go-to-market |
 | `work.lux.pill.02` | Pill | Pricing strategy |
+| `work.lux.feature.image` | Image | img/work-lux-feature-02.png |
+| `work.lux.feature.image.02` | Image | img/work-lux-feature-01.png |
+| `work.lux.feature.company` | Featured - Company | Lux Labs built transparent display materials and projection film, and the work was turning technical complexity into a simpler buying story. |
+| `work.lux.feature.did` | Featured - What I did | Simplified the ecommerce catalog from ~30 SKUs to two core offers, rebuilt pricing and packaging, and aligned the messaging to drive higher conversion and sales. |
+| `work.lux.feature.helped` | Featured - How it helped | Improved gross margins, conversions, and sales, delivering about 100% ROI within six weeks. The pricing and packaging strategy stayed intact through acquisition. |
+| `work.lux.feature.quote.02` | Featured - Quote | “Lux Labs hired Jeremy to support our ClearBright product launch. He helped us overhaul our e-commerce approach by redesigning our website, simplifying our pricing and packaging, and creating new marketing content. He helped us step back and evaluate how to communicate with our customers.” |
+| `work.lux.feature.quote.02.attr` | Featured - Quote attribution | Spencer Powers - CEO, Lux Labs |
 
 ### Work card: Pre-IPO Roadshow
 
@@ -128,28 +143,13 @@
 
 ---
 
-## Section 4 - About
-
-| LOCATION | Type | Copy |
-|----------|------|------|
-| `about.eyebrow` | Eyebrow | About |
-| `about.visible` | Body (always shown) | I help founders, technologists, and deep domain experts translate between technical depth and the commercial clarity needed to raise, hire, partner, grow, and eventually sell. |
-| `about.toggle.collapsed` | Button | + Background |
-| `about.toggle.expanded` | Button | − Less |
-| `about.expanded.01` | Body (hidden until expanded) | MIT Sloan (MBA, 2017). Worked at Adobe, HubSpot, and Altitude (an industrial design firm). Much of my career has been spent working with smart people who struggle to communicate to others what they see as obvious, intuitive, and self-evident. |
-| `about.expanded.02` | Body (hidden until expanded) | Open to FT roles or advisory work where commercial strategy is part of the build. |
-| `about.expanded.link` | Link label | jeremyafinch.com |
-| `about.photo.file` | Image | img/photo.jpg |
-| `about.photo.alt` | Image alt text | Jeremy Finch |
-
----
-
-## Section 5 - Contact
+## Section 4 - Contact
 
 | LOCATION | Type | Copy |
 |----------|------|------|
 | `contact.headline` | Headline (uppercase on site) | Sound like your situation? |
 | `contact.intro` | Body | If the technology is genuine but the commercial story is still being figured out - (line break) I'd love to connect. |
+| `contact.availability` | Body | Open to FT roles or advisory work where commercial strategy is part of the build. |
 | `contact.cta` | Button | Schedule a call → |
 
 ---
