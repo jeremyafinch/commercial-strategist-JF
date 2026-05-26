@@ -48,6 +48,7 @@
   --type-line-body: 1.65;
   --type-line-small: 1.55;
   --type-line-display: 1.1;
+  --work-featured-thumb-max: 220px;
 }
 
 /* ==========================================================================
@@ -194,7 +195,16 @@ button:focus-visible,
 
 .honest-limit {
   margin-top: var(--stack-section);
-  color: var(--color-text-primary);
+  margin-inline: auto;
+  max-width: var(--body-copy-max);
+  padding: var(--stack-relaxed);
+  border: 1px dashed var(--color-border);
+  background: var(--color-surface);
+  border-radius: 3px;
+  font-size: var(--type-small);
+  line-height: var(--type-line-small);
+  text-align: center;
+  color: var(--color-text-muted);
 }
 
 .eyebrow + .card-grid {
@@ -378,8 +388,8 @@ button.work-card {
 
 .work-featured__item {
   display: grid;
-  grid-template-columns: 1fr minmax(340px, 460px);
-  gap: var(--space-md);
+  grid-template-columns: 1fr;
+  gap: var(--stack-section);
   padding: var(--space-card-padding);
   border: 1px solid var(--color-border);
   border-radius: 3px;
@@ -416,8 +426,9 @@ button.work-card {
 
 .work-featured__sections {
   display: grid;
-  gap: var(--stack-default);
+  gap: var(--stack-relaxed);
   margin: 0 0 var(--stack-section);
+  max-width: none;
 }
 
 .work-featured__label {
@@ -432,7 +443,7 @@ button.work-card {
 
 .work-featured__text {
   margin: 0;
-  max-width: 64ch;
+  max-width: none;
   font-family: var(--font-body);
   font-size: var(--type-small);
   line-height: var(--type-line-small);
@@ -451,10 +462,12 @@ button.work-card {
   border: 1px dashed var(--color-border);
   background: var(--color-surface);
   border-radius: 3px;
+  max-width: none;
 }
 
 .work-featured__quote-text {
   margin: 0 0 var(--stack-default);
+  max-width: none;
   font-family: var(--font-body);
   font-size: var(--type-small);
   line-height: var(--type-line-small);
@@ -472,23 +485,61 @@ button.work-card {
 }
 
 .work-featured__media {
+  order: -1;
   margin: 0;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border-radius: 3px;
-  border: 1px solid var(--color-border);
-  background: var(--color-surface);
+  width: 100%;
+  max-width: none;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0;
+  grid-template-columns: 1fr;
+  gap: var(--stack-relaxed);
+  align-items: start;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+.work-featured__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
+  cursor: zoom-in;
+  transition: opacity 0.18s ease;
+}
+
+.work-featured__thumb:hover {
+  opacity: 0.92;
+}
+
+.work-featured__thumb:active {
+  text-decoration: none;
+}
+
+.work-featured__thumb:focus-visible {
+  outline: 2px solid var(--color-text-primary);
+  outline-offset: 3px;
+}
+
+@media (min-width: 769px) {
+  .work-featured__media {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .work-featured__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: var(--work-featured-thumb-max, 220px);
   display: block;
+  object-fit: contain;
 }
 
 .work-secondary {
@@ -548,6 +599,9 @@ button.work-card {
 .hero-intro__photo {
   justify-self: end;
   max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .hero-intro__content {
@@ -574,6 +628,29 @@ button.work-card {
   width: 100%;
   height: auto;
   border-radius: 3px;
+}
+
+.hero-intro__photo-caption {
+  margin-top: var(--space-xs);
+  align-self: center;
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+  font-family: var(--font-body);
+  font-size: var(--type-eyebrow);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+  transition: color 0.18s ease, border-color 0.18s ease;
+}
+
+.hero-intro__photo-caption:hover {
+  color: var(--color-text-primary);
+  border-bottom-color: var(--color-text-primary);
+  text-decoration: none;
 }
 
 .hero .logo-bar {
@@ -850,10 +927,6 @@ button.work-card {
   .card-grid--work-secondary {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .work-featured__item {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* ==========================================================================
@@ -890,6 +963,10 @@ button.work-card {
 
   .card-grid--work-secondary {
     grid-template-columns: 1fr;
+  }
+
+  .work-featured__media {
+    gap: var(--stack-default);
   }
 
   .hero-intro {

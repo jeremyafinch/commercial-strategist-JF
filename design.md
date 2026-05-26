@@ -119,13 +119,20 @@ color: var(--color-text-body);
 /* Footnotes / honest acknowledgment lines */
 font-family: Inter;
 font-size: 13px;
-font-style: italic;
+line-height: 1.55;
+text-align: center;
 color: var(--color-text-muted);
+padding: 24px;
+border: 1px dashed var(--color-border);
+background: var(--color-surface);
+border-radius: 3px;
+max-width: 640px;
+margin-inline: auto;
 ```
 
 ### Rules
 - Headlines always uppercase via CSS `text-transform: uppercase` - never type-set in all-caps manually
-- No italic except the honest limit line and any pull quotes
+- No italic except pull quotes in modals or featured case studies
 - No bold body copy except card titles and numbered labels
 - IBM Plex Sans for any display or heading element; Inter for everything else
 - Never mix weights within a single text block

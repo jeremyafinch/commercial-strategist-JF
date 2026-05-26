@@ -33,6 +33,7 @@
 | `hero.cta` | Button (below pitch, left column) | Let's chat about what you're building → |
 | `hero.photo.file` | Image | img/photo.jpg |
 | `hero.photo.alt` | Image alt text | Jeremy Finch |
+| `hero.photo.caption` | Link (muted, under photo) | Jeremy Finch → https://www.linkedin.com/in/jeremyfinch/ |
 | `hero.logos.label` | Eyebrow | Previously |
 | `hero.logos.file` | Image | img/logos.png |
 | `hero.logos.alt` | Image alt text | Altitude, Adobe, HubSpot, and MIT Sloan |
@@ -48,7 +49,7 @@
 | `pov.headline` | Headline (uppercase on site) | If you wait until it's ready, you're already too late. |
 | `pov.body` | Body | Hard tech doesn't ship on two-week cycles. In long, capital-intensive development startups, you get significantly fewer shots. That's why the market story has to grow and evolve alongside your core tech - not just get bolted on at the very end. |
 | `pov.research` | Body (before POV cards) | Customer and competitive research should shape what you build - not just how you sell it. |
-| `pov.caveat` | Body | Marketing can't fix underlying technology, your org design, or any legal / IP problems. But a GTM voice belongs in the room early - especially as your product is still being built. |
+| `pov.caveat` | Body | Marketing can't fix underlying technology, your org design, or any legal or IP problems. But a GTM voice belongs in the room early - especially as your product is still being built. (In `index.html`, use `<br><br>` between those two sentences.) |
 
 ### POV cards
 
