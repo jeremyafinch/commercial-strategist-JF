@@ -1008,3 +1008,106 @@ button.work-card {
     padding: var(--space-gutter);
   }
 }
+
+/* ==========================================================================
+   V2 page (work.jeremyafinch.com/v2/) - scoped; production unchanged
+   ========================================================================== */
+
+.page-v2 .pov__link-wrap {
+  margin: 0 0 var(--stack-section);
+}
+
+.page-v2 .pov__link {
+  font-family: var(--font-body);
+  font-size: var(--type-body);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.page-v2 .pov__link:hover {
+  color: var(--color-text-body);
+}
+
+.page-v2 .work__subhead {
+  margin: var(--stack-tight) 0 var(--stack-section);
+  max-width: var(--body-copy-max);
+  font-family: var(--font-display);
+  font-size: var(--type-subhead);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-text-primary);
+}
+
+.page-v2 .work-featured__item--stacked {
+  grid-template-columns: 1fr;
+}
+
+.page-v2 .work-featured__media--video {
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+.page-v2 .work-inline-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.page-v2 .work-inline-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.page-v2 .work-additional {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.page-v2 .work-additional__heading {
+  margin: 0 0 var(--stack-relaxed);
+}
+
+.page-v2 .work-additional__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--stack-relaxed);
+}
+
+.page-v2 .work-additional__item {
+  margin: 0;
+  max-width: var(--body-copy-max);
+}
+
+.page-v2 .work-additional__tag {
+  display: block;
+  margin-bottom: var(--stack-tight);
+  font-family: var(--font-mono);
+  font-size: var(--type-eyebrow);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.page-v2 .work-additional__text {
+  margin: 0;
+  font-size: var(--type-body);
+  line-height: var(--type-line-body);
+  color: var(--color-text-body);
+}
+
+.page-v2 .contact__closing {
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
