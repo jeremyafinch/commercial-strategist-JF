@@ -44,7 +44,7 @@
 | `hero.headline.accent` | Headline | Let's make it legible to capital and customers. |
 | `hero.pitch.01` | Body | Seed-to-Series B commercial narrative and technical GTM for hard-tech startups. |
 | `hero.pitch.02` | Body | I work with founders and deep domain experts to translate technical depth into what you need to raise, hire, partner, and sell. |
-| `hero.pitch.03` | Body | Focus: physical products and hard tech.  |
+| `hero.pitch.03` | Body | Building something new, high-value, and hard-to-explain? |
 | `hero.cta` | Button | Let's connect → |
 | `hero.cta.url` | URL | https://calendly.com/jeremyfinch_meeting/ |
 | `hero.photo.caption` | Link | Jeremy Finch → https://www.linkedin.com/in/jeremyfinch/ |
