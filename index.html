@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Active working draft - edit here; preview at http://localhost:8080/ -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,8 +10,8 @@
   <link rel="canonical" href="https://work.jeremyafinch.com/">
   <meta name="theme-color" content="#111111">
 
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon.svg">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://work.jeremyafinch.com/">
@@ -25,20 +26,17 @@
   <meta name="twitter:description" content="Product marketing and commercial strategy for hard tech and complex B2B products.">
   <meta name="twitter:image" content="https://work.jeremyafinch.com/og-image.png">
 
-  <!-- Fonts - IBM Plex Sans 600/700 + Inter 400/500 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
+<body class="page-v2">
 
   <main>
 
-    <!-- ================================================================== -->
-    <!-- SECTION 1 - HERO                                                   -->
-    <!-- ================================================================== -->
+    <!-- SECTION 1 - HERO -->
     <section id="hero" class="hero section" aria-labelledby="hero-headline">
       <div class="hero__inner">
 
@@ -68,7 +66,7 @@
           <div class="hero-intro__photo">
             <img
               class="hero-intro__photo-img"
-              src="img/photo.jpg"
+              src="/img/photo.jpg"
               alt="Jeremy Finch"
               width="480"
               height="600"
@@ -83,12 +81,11 @@
 
         </div>
 
-        <!-- Logo bar - credentials appear ONCE on the entire page (see design.md) -->
         <div class="logo-bar" aria-label="Previously">
           <span class="logo-bar__label">Previously</span>
           <img
             class="logo-bar__img"
-            src="img/logos.png"
+            src="/img/logos.png"
             alt="Altitude, Adobe, HubSpot, and MIT Sloan"
             width="9100"
             height="1068"
@@ -98,9 +95,7 @@
       </div>
     </section>
 
-    <!-- ================================================================== -->
-    <!-- SECTION 2 - POINT OF VIEW                                          -->
-    <!-- ================================================================== -->
+    <!-- SECTION 2 - POINT OF VIEW -->
     <section id="point-of-view" class="section section--follow-hero" aria-labelledby="pov-headline">
       <div class="section__inner">
 
@@ -113,16 +108,27 @@
         </h2>
 
         <p class="prose">
-          Hard tech doesn't ship on two-week cycles. In long, capital-intensive development startups, you get significantly fewer shots. That's why the market story has to grow and evolve alongside your core tech - not just get bolted on at the very end.
+          The worst time to figure out your market story is when you urgently need it. Yet many technical founders think of marketing as something you bolt on at the end, when the product is finally ready. In hard tech, that instinct will cost you time and runway.
         </p>
 
-        <p class="prose pov__research">Customer and competitive research should shape what you build - not just how you sell it.</p>
+        <p class="prose">
+          When development cycles last a decade and capital requirements run into the tens of millions, your market story isn't a launch asset. It's a design input - one that shapes what you build, who you hire, and whether money shows up in time.
+        </p>
+
+        <p class="pov__link-wrap">
+          <a
+            class="pov__link"
+            href="https://docs.google.com/document/d/1mXTznBJsOwonMlEeezdZjcLEiznj_ob5lOBihiWzF_Y/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Read the full point of view →</a>
+        </p>
 
         <div class="card-grid card-grid--pov">
 
           <article class="card pov-card">
-            <h3 class="pov-card__title">Finding partners</h3>
-            <p class="pov-card__text">A strategic partner narrative opens early doors that cold outreach never can.</p>
+            <h3 class="pov-card__title">Extending the runway</h3>
+            <p class="pov-card__text">A clear, distinct investor narrative helps you raise faster, on better terms.</p>
           </article>
 
           <article class="card pov-card">
@@ -131,8 +137,13 @@
           </article>
 
           <article class="card pov-card">
-            <h3 class="pov-card__title">Extending the runway</h3>
-            <p class="pov-card__text">A clear, distinct investor narrative helps you raise faster, on better terms.</p>
+            <h3 class="pov-card__title">Finding partners</h3>
+            <p class="pov-card__text">A strategic partner narrative opens early doors that cold outreach never can.</p>
+          </article>
+
+          <article class="card pov-card">
+            <h3 class="pov-card__title">Building social proof</h3>
+            <p class="pov-card__text">Case studies and proof points can take years to build. Start early.</p>
           </article>
 
           <article class="card pov-card">
@@ -145,48 +156,63 @@
             <p class="pov-card__text">Adjacent industries, regulators, acquirers - each needs a variation on the story.</p>
           </article>
 
-          <article class="card pov-card">
-            <h3 class="pov-card__title">Building social proof</h3>
-            <p class="pov-card__text">Case studies and proof points can take years to build. Start early.</p>
-          </article>
-
         </div>
 
-        <p class="prose honest-limit">
-          Marketing can't fix underlying technology, your org design, or any legal or IP problems.<br><br>
-          But a GTM voice belongs in the room early - especially as your product is still being built.
+      </div>
+    </section>
+
+    <!-- SECTION 3 - TWO KINDS OF WORK -->
+    <section id="two-kinds" class="section" aria-labelledby="two-kinds-headline">
+      <div class="section__inner">
+
+        <h2 id="two-kinds-headline" class="section-headline headline">Two kinds of marketing work (both matter).</h2>
+
+        <p class="prose">
+          The first is foundational - it happens early and produces clarity, not campaigns. Why should this company exist? Who is the user, the buyer, the economic customer? What are you displacing, and what will a rational buyer need to say yes? These aren't marketing deliverables. They're the load-bearing elements of your commercial architecture.
+        </p>
+
+        <p class="prose">
+          The second is episodic - triggered by specific moments: a fundraising round, a technical milestone, a key hire, a market expansion, a shift in the competitive environment. These moments arrive faster than most founders expect. The companies that handle them well didn't scramble. They had the foundation done.
+        </p>
+
+        <p class="prose">
+          You don't need a 20-person marketing team. You need someone who can build the foundation once and show up ready at the moments that matter.
         </p>
 
       </div>
     </section>
 
-    <!-- ================================================================== -->
-    <!-- SECTION 3 - SELECTED WORK                                          -->
-    <!-- ================================================================== -->
+    <!-- SECTION 4 - SELECTED WORK -->
     <section id="selected-work" class="section section--surface" aria-labelledby="work-eyebrow">
       <div class="section__inner">
 
         <span id="work-eyebrow" class="eyebrow">Selected work</span>
 
+        <p class="work__subhead">Hard tech, long cycles, high stakes.</p>
+
         <div class="work-featured">
 
-          <!-- Featured - TeraDAR (marquee, fully visible) -->
+          <!-- TeraDAR -->
           <article class="work-featured__item work-featured__item--marquee" aria-label="TeraDAR case study">
             <div class="work-featured__content">
-              <span class="work-featured__tag">Hard tech</span>
+              <span class="work-featured__tag">Hard tech - Sensing</span>
               <h3 class="work-featured__title">TeraDAR</h3>
               <div class="work-featured__sections">
                 <div class="work-featured__section">
                   <h4 class="work-featured__label">Company</h4>
-                  <p class="work-featured__text">Teradar builds next-generation terahertz sensing that delivers long-range perception as an alternative to radar and LiDAR in safety-critical environments.</p>
+                  <p class="work-featured__text">TeraDAR builds next-generation terahertz sensing that delivers long-range perception as an alternative to radar and LiDAR in safety-critical environments.</p>
+                </div>
+                <div class="work-featured__section">
+                  <h4 class="work-featured__label">Tension</h4>
+                  <p class="work-featured__text">They had a compelling technology and were looking to get started. The seed raise was ahead of them but the story wasn't ready.</p>
                 </div>
                 <div class="work-featured__section">
                   <h4 class="work-featured__label">What I did</h4>
-                  <p class="work-featured__text">Helped with the seed-stage fundraise: designed the investor pitch deck, coached the CEO on communications, and built a technical appendix used across 50+ early investor meetings.</p>
+                  <p class="work-featured__text">Built the seed-stage investor narrative - pitch deck, technical appendix, partnered with CEO for communications coaching across 60+ investor pitch meetings.</p>
                 </div>
                 <div class="work-featured__section">
-                  <h4 class="work-featured__label">How it helped</h4>
-                  <p class="work-featured__text">Supported Teradar through Series A and a $150M Series B, then produced technical product marketing videos and CES assets to demonstrate improved sensor capabilities.</p>
+                  <h4 class="work-featured__label">Outcome</h4>
+                  <p class="work-featured__text">The seed round closed oversubscribed. That work carried through a Series A and a $150M Series B, expanding into technical product marketing, video production, and CES assets as the company and product matured.</p>
                 </div>
               </div>
               <div class="work-featured__pills" aria-label="Services">
@@ -197,14 +223,14 @@
             <figure class="work-featured__media">
               <a
                 class="work-featured__thumb"
-                href="img/work-teradar-techcrunch-feature.png"
+                href="/img/work-teradar-techcrunch-feature.png"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="View full-size screenshot: Teradar TechCrunch coverage"
               >
                 <img
                   class="work-featured__img"
-                  src="img/work-teradar-techcrunch-feature.png"
+                  src="/img/work-teradar-techcrunch-feature.png"
                   alt="TechCrunch announcement screenshot featuring Teradar next-generation terahertz sensing fundraising"
                   width="1200"
                   height="675"
@@ -213,14 +239,14 @@
               </a>
               <a
                 class="work-featured__thumb"
-                href="img/work-teradar-feature.png"
+                href="/img/work-teradar-feature.png"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="View full-size screenshot: Teradar product website"
               >
                 <img
                   class="work-featured__img"
-                  src="img/work-teradar-feature.png"
+                  src="/img/work-teradar-feature.png"
                   alt="Teradar product website screenshot highlighting next-generation terahertz vision capabilities"
                   width="1200"
                   height="675"
@@ -230,29 +256,33 @@
             </figure>
           </article>
 
-          <!-- Featured - Lux Labs (fully visible) -->
+          <!-- Lux Labs -->
           <article class="work-featured__item" aria-label="Lux Labs case study">
             <div class="work-featured__content">
-              <span class="work-featured__tag">Hard tech</span>
+              <span class="work-featured__tag">Hard tech - Materials science</span>
               <h3 class="work-featured__title">Lux Labs</h3>
               <div class="work-featured__sections">
                 <div class="work-featured__section">
                   <h4 class="work-featured__label">Company</h4>
-                  <p class="work-featured__text">Lux Labs built transparent display materials and projection film, and the work was turning technical complexity into a simpler buying story.</p>
+                  <p class="work-featured__text">Lux Labs built transparent display materials and projection film - an MIT spinout turning advanced materials science into a new consumer and commercial product.</p>
+                </div>
+                <div class="work-featured__section">
+                  <h4 class="work-featured__label">Tension</h4>
+                  <p class="work-featured__text">Real technology, early customers, but a go-to-market architecture that wasn't built for scale - 30 SKUs, low sales, unclear positioning, margins under pressure.</p>
                 </div>
                 <div class="work-featured__section">
                   <h4 class="work-featured__label">What I did</h4>
-                  <p class="work-featured__text">Simplified the ecommerce catalog from ~30 SKUs to two core offers, rebuilt pricing and packaging, and aligned the messaging to drive higher conversion and sales.</p>
+                  <p class="work-featured__text">Simplified the catalog from 30 SKUs to two core offerings, rebuilt pricing model and persona-based e-commerce website, aligned messaging to drive conversion.</p>
                 </div>
                 <div class="work-featured__section">
-                  <h4 class="work-featured__label">How it helped</h4>
-                  <p class="work-featured__text">Improved gross margins, conversions, and sales, delivering about 100% ROI within six weeks. The pricing and packaging strategy stayed intact through acquisition.</p>
+                  <h4 class="work-featured__label">Outcome</h4>
+                  <p class="work-featured__text">100% ROI in six weeks through improved gross margins. That pricing and packaging structure stayed intact through acquisition - the ultimate stress test for whether the commercial architecture could actually hold.</p>
                 </div>
               </div>
 
               <div class="work-featured__quote" aria-label="Client quote">
                 <p class="work-featured__quote-text">&ldquo;Lux Labs hired Jeremy to support our ClearBright product launch. He helped us overhaul our e-commerce approach by redesigning our website, simplifying our pricing and packaging, and creating new marketing content. He helped us step back and evaluate how to communicate with our customers.&rdquo;</p>
-                <p class="work-featured__quote-meta">Spencer Powers - CEO, Lux Labs</p>
+                <p class="work-featured__quote-meta">Spencer Powers, CEO, Lux Labs</p>
               </div>
 
               <div class="work-featured__pills" aria-label="Services">
@@ -263,14 +293,14 @@
             <figure class="work-featured__media">
               <a
                 class="work-featured__thumb"
-                href="img/work-lux-feature-02.png"
+                href="/img/work-lux-feature-02.png"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="View full-size screenshot: Lux Labs ClearBright product display"
               >
                 <img
                   class="work-featured__img"
-                  src="img/work-lux-feature-02.png"
+                  src="/img/work-lux-feature-02.png"
                   alt="Lux Labs product display screenshot for ClearBright transparent projection film"
                   width="1200"
                   height="675"
@@ -279,14 +309,14 @@
               </a>
               <a
                 class="work-featured__thumb"
-                href="img/work-lux-feature-01.png"
+                href="/img/work-lux-feature-01.png"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="View full-size screenshot: Lux Labs ClearBright product page"
               >
                 <img
                   class="work-featured__img"
-                  src="img/work-lux-feature-01.png"
+                  src="/img/work-lux-feature-01.png"
                   alt="Lux Labs ClearBright product page screenshot"
                   width="1200"
                   height="675"
@@ -296,71 +326,85 @@
             </figure>
           </article>
 
+          <!-- Reframe Systems -->
+          <article class="work-featured__item work-featured__item--stacked" aria-label="Reframe Systems case study">
+            <div class="work-featured__content">
+              <span class="work-featured__tag">Hard tech - Construction robotics</span>
+              <h3 class="work-featured__title">Reframe Systems</h3>
+              <div class="work-featured__sections">
+                <div class="work-featured__section">
+                  <h4 class="work-featured__label">Company</h4>
+                  <p class="work-featured__text">Reframe Systems is building robotics and automation technology for prefab construction - a technically complex solution for an industry resistant to change.</p>
+                </div>
+                <div class="work-featured__section">
+                  <h4 class="work-featured__label">Tension</h4>
+                  <p class="work-featured__text">The founders are brilliant and the technology was real. But the story was hard to convey, and the company was struggling to balance the outcomes-based story of what they do with the technology story of how they did it.</p>
+                </div>
+                <div class="work-featured__section">
+                  <h4 class="work-featured__label">What I did</h4>
+                  <p class="work-featured__text">Rather than write the story for them, I coached one of the cofounders to tell it himself - on camera, in their own words. The goal was helping the co-founder tell his story authentically in his own way, not just sound like a pitch deck.</p>
+                </div>
+                <div class="work-featured__section">
+                  <h4 class="work-featured__label">Outcome</h4>
+                  <p class="work-featured__text">What came out was something no polished copy could replicate. The video became a recruiting asset, a partner conversation opener, and a PR and GTM piece simultaneously. Sometimes the right format changes everything.</p>
+                </div>
+              </div>
+              <div class="work-featured__pills" aria-label="Services">
+                <span class="pill">Founder narrative</span>
+                <span class="pill">Video</span>
+                <span class="pill">Talent recruiting</span>
+              </div>
+            </div>
+            <figure class="work-featured__media work-featured__media--video">
+              <div class="work-inline-video">
+                <iframe
+                  src="https://www.youtube.com/embed/FPPJ4673UKQ"
+                  title="Reframe Systems founder interview"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </figure>
+          </article>
+
         </div>
 
-        <div class="work-secondary">
-          <div class="card-grid card-grid--work card-grid--work-secondary" aria-label="Additional work">
-
-          <!-- Work card 3 - Pre-IPO Roadshow -->
-          <button type="button" class="card work-card" data-modal="pre-ipo" aria-haspopup="dialog">
-            <span class="work-card__tag">Fundraising</span>
-            <span class="work-card__company">Pre-IPO Roadshow</span>
-            <span class="work-card__descriptor">Investor video series for a company preparing to file an S-1 (IPO).</span>
-            <span class="work-card__pills">
-              <span class="pill">Investor strategy</span>
-              <span class="pill">Video production</span>
-            </span>
-          </button>
-
-          <!-- Work card 4 - Reframe Systems -->
-          <button type="button" class="card work-card" data-modal="reframe" aria-haspopup="dialog">
-            <span class="work-card__tag">Hard tech</span>
-            <span class="work-card__company">Reframe Systems</span>
-            <span class="work-card__descriptor">Unscripted founder conversation about AI prefab construction and robotics.</span>
-            <span class="work-card__pills">
-              <span class="pill">Founder narrative</span>
-              <span class="pill">Video interview</span>
-            </span>
-          </button>
-
-          <!-- Work card 5 - Altitude -->
-          <button type="button" class="card work-card" data-modal="altitude" aria-haspopup="dialog">
-            <span class="work-card__tag">Healthcare tech</span>
-            <span class="work-card__company">Medical client (via Altitude)</span>
-            <span class="work-card__descriptor">User research and roadmapping for a medical device manufacturer.</span>
-            <span class="work-card__pills">
-              <span class="pill">User research</span>
-              <span class="pill">M&amp;A roadmapping</span>
-            </span>
-          </button>
-
-          <!-- Work card 6 - Akeneo -->
-          <button type="button" class="card work-card" data-modal="akeneo" aria-haspopup="dialog">
-            <span class="work-card__tag">B2B SaaS</span>
-            <span class="work-card__company">Akeneo</span>
-            <span class="work-card__descriptor">An interactive maturity assessment and central B2B lead-gen asset.</span>
-            <span class="work-card__pills">
-              <span class="pill">Go-to-market</span>
-              <span class="pill">B2B sales asset</span>
-            </span>
-          </button>
-
-          </div>
+        <div class="work-additional" aria-label="Additional work">
+          <h3 class="work-additional__heading eyebrow">Additional work</h3>
+          <ul class="work-additional__list">
+            <li class="work-additional__item">
+              <span class="work-additional__tag">Fundraising / Pre-IPO</span>
+              <p class="work-additional__text">Investor roadshow video series for a company preparing to file an S-1.</p>
+            </li>
+            <li class="work-additional__item">
+              <span class="work-additional__tag">Healthcare tech</span>
+              <p class="work-additional__text">User research and M&amp;A roadmapping for a medical device manufacturer (via Altitude).</p>
+            </li>
+            <li class="work-additional__item">
+              <span class="work-additional__tag">B2B SaaS / Akeneo</span>
+              <p class="work-additional__text">Interactive maturity assessment and custom B2B lead-gen asset.</p>
+            </li>
+          </ul>
         </div>
 
       </div>
     </section>
 
-    <!-- ================================================================== -->
-    <!-- SECTION 4 - CONTACT                                                -->
-    <!-- ================================================================== -->
-    <section id="contact" class="section" aria-labelledby="contact-headline">
+    <!-- SECTION 5 - CLOSE / CTA -->
+    <section id="contact" class="section" aria-labelledby="contact-closing">
       <div class="section__inner">
 
-        <h2 id="contact-headline" class="contact-headline headline">Sound like your situation?</h2>
+        <p class="prose">
+          If the technology is genuine but the commercial story is still being figured out - that gap is solvable. But closing it earlier is almost always worth more than closing it later.
+        </p>
 
-        <p class="contact__intro prose">If the technology is genuine but the commercial story is still being figured out -<br>
-        I'd love to connect.</p>
+        <p class="prose">
+          Working with scientists and engineers who have spent years - sometimes careers - on a single hard problem is not a task I take lightly. My job is to make sure that work is understood, believed, and backed by the people who can help bring it into the world.
+        </p>
+
+        <p id="contact-closing" class="prose contact__closing">I'd love to hear what you're building.</p>
 
         <p class="contact__availability prose">Open to FT roles or advisory work where commercial strategy is part of the build.</p>
 
@@ -375,9 +419,6 @@
 
   </main>
 
-  <!-- ================================================================== -->
-  <!-- SECTION 6 - FOOTER                                                 -->
-  <!-- ================================================================== -->
   <footer class="site-footer">
     <div class="site-footer__inner">
       <p class="site-footer__brand">Jeremy Finch · Boston, MA</p>
@@ -395,142 +436,5 @@
     </div>
   </footer>
 
-  <!-- ================================================================== -->
-  <!-- MODAL - work case studies (content swapped by scripts.js)          -->
-  <!-- ================================================================== -->
-  <div id="modal-overlay" class="modal-overlay" aria-hidden="true" role="presentation">
-    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-
-      <button type="button" id="modal-close" class="modal-close" aria-label="Close dialog">×</button>
-
-      <!-- Modal: TeraDAR -->
-      <article id="modal-teradar" class="modal-content" hidden>
-        <h2 id="modal-title" class="modal-content__title">Teradar</h2>
-        <h3>Situation</h3>
-        <p>Pre-seed advisory engagement with a novel deep tech company that needed to translate differentiated sensor tech into a story investors could fund. Scope included investor narrative development, pitch deck design, and ongoing technical product marketing.</p>
-        <h3>Outcome</h3>
-        <p>Multiple rounds raised at increasing valuations. Exited stealth publicly in 2025. Worked closely with Teradar's CEO and SVP of Product. Produced CES demo video content.</p>
-        <!-- modal.teradar.placeholder.image -->
-        <figure class="modal-figure">
-          <img
-            class="modal-figure__img"
-            src="img/work-01.png"
-            alt="Teradar website hero showing terahertz sensor visualization and product positioning"
-            width="1024"
-            height="576"
-            loading="lazy"
-          >
-        </figure>
-      </article>
-
-      <!-- Modal: Lux Labs -->
-      <article id="modal-lux-labs" class="modal-content" hidden>
-        <h2 class="modal-content__title">Lux Labs Displays</h2>
-        <h3>Situation</h3>
-        <p>Consulting project with an MIT transparent projection film startup. They had significant web traffic but weak conversion and low sales. A 30-SKU product line was too complex. Messaging led with technical specs instead of user language and B2B outcomes.</p>
-        <h3>Outcome</h3>
-        <p>Product line was simplified to two offerings (B2B and B2C paths). 100% ROI within 6 weeks through sales uplift and improved margins. Website and pricing structure held through acquisition.</p>
-        <!-- TESTIMONIAL QUOTE PLACEHOLDER -->
-        <div class="modal-placeholder">&ldquo;Lux Labs hired Jeremy to support our ClearBright product launch. He helped us overhaul our e-commerce approach by redesigning our website, simplifying our pricing and packaging, and creating new marketing content. He helped us step back and evaluate how to communicate with our customers.&rdquo;<br>
-        - Spencer Powers (CEO, Lux Labs)</div>
-        <!-- modal.lux.placeholder.image -->
-        <figure class="modal-figure">
-          <img
-            class="modal-figure__img"
-            src="img/work-02.png"
-            alt="Lux Labs Displays website and ClearBright transparent projection film product marketing"
-            width="1200"
-            height="675"
-            loading="lazy"
-          >
-        </figure>
-      </article>
-
-      <!-- Modal: Pre-IPO Roadshow -->
-      <article id="modal-pre-ipo" class="modal-content" hidden>
-        <h2 class="modal-content__title">IPO Multimedia Roadshow</h2>
-        <h3>Situation</h3>
-        <p>Consulting project for a private tech company that needed a video series to anchor their pre-IPO institutional investor roadshow - a high-stakes, regulated process, on a compressed timeline.</p>
-        <h3>Outcome</h3>
-        <p>The company ultimately pivoted from IPO to a private equity raise approach due to market conditions. But the fundraise succeeded. And the narrative held through the pivot.</p>
-        <!-- modal.preipo.placeholder.image -->
-        <figure class="modal-figure">
-          <img
-            class="modal-figure__img"
-            src="img/work-03.jpg"
-            alt="Opalite video grid layout for pre-IPO institutional investor roadshow multimedia"
-            width="1200"
-            height="675"
-            loading="lazy"
-          >
-        </figure>
-      </article>
-
-      <!-- Modal: Reframe Systems -->
-      <article id="modal-reframe" class="modal-content" hidden>
-        <h2 class="modal-content__title">Reframe Systems</h2>
-        <h3>Situation</h3>
-        <p>I recorded an unscripted video conversation with the co-founder of a robotics-enabled construction startup (Reframe Systems) that needed to articulate a complex story spanning AI, prefab manufacturing, and BizOps innovation.</p>
-        <h3>Outcome</h3>
-        <p>Produced and edited a 30 min interview to articulate Reframe's full narrative - technology, market, and vision - in plain language. Used for PR / media, recruiting, and GTM alignment.</p>
-        <!-- modal.reframe.placeholder.video -->
-        <div class="modal-video">
-          <iframe
-            data-src="https://www.youtube.com/embed/FPPJ4673UKQ"
-            title="Reframe Systems interview"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </article>
-
-      <!-- Modal: Altitude -->
-      <article id="modal-altitude" class="modal-content" hidden>
-        <h2 class="modal-content__title">Medical device company</h2>
-        <h3>Situation</h3>
-        <p>FT user research at Altitude, an industrial design firm (acq, Accenture). Did in-context qualitative research and technical / product roadmapping for a medical device manufacturer navigating complex clinical requirements related to seniors aging independently at home.</p>
-        <h3>Outcome</h3>
-        <p>Research findings shaped product direction for the next generation of fall alert solutions and informed M&amp;A acquisition priorities for adjacent connected care technologies.</p>
-        <!-- modal.altitude.placeholder.image -->
-        <figure class="modal-figure">
-          <img
-            class="modal-figure__img"
-            src="img/work-04.png"
-            alt="Altitude user research workshop with affinity mapping and in-context medical device research synthesis"
-            width="1024"
-            height="576"
-            loading="lazy"
-          >
-        </figure>
-      </article>
-
-      <!-- Modal: Akeneo -->
-      <article id="modal-akeneo" class="modal-content" hidden>
-        <h2 class="modal-content__title">Akeneo</h2>
-        <h3>Situation</h3>
-        <p>Contract product marketing role at Akeneo. The team needed a scalable way to qualify enterprise prospects, retain existing accounts, and communicate value across a complex B2B buying process.</p>
-        <h3>Outcome</h3>
-        <p>Built a key GTM tool that has run for 6+ years, generated tens of thousands of data points, and automated lead routing. Translated and localized into four languages. Still in use.</p>
-        <!-- TESTIMONIAL QUOTE PLACEHOLDER -->
-        <div class="modal-placeholder">&ldquo;Jeremy delivered an integrated online assessment tool for us that is a key part of our overall GTM strategy. He identified the deliverables and risks, created a roadmap to meet our aggressive timeline, and kept us on track with detailed multimedia updates. We couldn't be happier with the partnership.&rdquo;<br>
-        Kristin Naragon (Chief Strategy Officer, Akeneo)</div>
-        <!-- modal.akeneo.placeholder.image -->
-        <figure class="modal-figure">
-          <img
-            class="modal-figure__img"
-            src="img/work-05.png"
-            alt="Akeneo maturity assessment and B2B product marketing lead generation tool"
-            width="1200"
-            height="675"
-            loading="lazy"
-          >
-        </figure>
-      </article>
-
-    </div>
-  </div>
-
-  <script src="scripts.js"></script>
 </body>
 </html>

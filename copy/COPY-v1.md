@@ -1,10 +1,14 @@
-# Site copy master document
+# Site copy master document — V1 (archive)
 # Jeremy Finch - Commercial Strategist Site
+#
+# Maps to: archive/v1/index.html
+# Preview:  http://localhost:8080/archive/v1/
+# Active:   copy/COPY-v2.md → index.html
 # Last exported: May 2026
 #
 # How to use this file
 # - Edit copy in Google Docs or any editor. Keep each LOCATION ID unchanged.
-# - When done, paste back into Cursor: "Apply all copy from COPY.md to index.html"
+# - When done, paste back into Cursor: "Apply all copy from copy/COPY-v1.md to archive/v1/index.html"
 # - Do not edit HTML comments or placeholder blocks unless you are replacing them with final copy.
 #
 # Punctuation rule for this site: use spaced hyphen ( - ), never em dash or en dash.

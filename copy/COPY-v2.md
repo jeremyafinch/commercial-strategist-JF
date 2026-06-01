@@ -1,11 +1,12 @@
-# Site copy master document (V2 draft)
+# Site copy master document — V2 (current draft)
 # Jeremy Finch - Commercial Strategist Site
 # Last exported: May 2026
 #
-# Maps to v2/index.html only. Production: COPY.md → index.html
-# Preview: https://work.jeremyafinch.com/v2/ (noindex)
+# Maps to: index.html
+# Preview:  http://localhost:8080/
+# Archive:  copy/COPY-v1.md → archive/v1/index.html
 #
-# Apply: "Apply all copy from COPY-v2.md to v2/index.html"
+# Apply: "Apply all copy from copy/COPY-v2.md to index.html"
 # Punctuation: spaced hyphen ( - ), never em dash or en dash.
 
 ---
@@ -31,7 +32,8 @@
 | LOCATION | Type | Copy |
 |----------|------|------|
 | `pov.eyebrow` | Eyebrow | Point of view |
-| `pov.kicker` | Header | Marketing isn't just the last mile. |
+| `pov.kicker` | Kicker | Marketing isn't just the last mile. |
+| `pov.headline` | Headline (uppercase on site) | If you wait until it's ready, you're already too late. |
 | `pov.body.01` | Body | The worst time to figure out your market story is when you urgently need it. Yet many technical founders think of marketing as something you bolt on at the end, when the product is finally ready. In hard tech, that instinct will cost you time and runway. |
 | `pov.body.02` | Body | When development cycles last a decade and capital requirements run into the tens of millions, your market story isn't a launch asset. It's a design input - one that shapes what you build, who you hire, and whether money shows up in time. |
 | `pov.link` | Link | Read the full point of view → https://docs.google.com/document/d/1mXTznBJsOwonMlEeezdZjcLEiznj_ob5lOBihiWzF_Y/edit?usp=sharing |
