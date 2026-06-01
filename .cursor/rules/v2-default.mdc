@@ -1,6 +1,6 @@
 ---
 description: Default to root index.html (V2); versioned copy in copy/
-alwaysApply: true
+alwaysApply: false
 ---
 
 # Working draft is root index.html (V2)
@@ -23,6 +23,15 @@ alwaysApply: true
 - `/v1/` → `/archive/v1/`
 - `/v2/` → `/`
 
+## Copy workflow (single source of truth)
+
+1. Edit prose in `copy/COPY-v2.md` only — not in `index.html`.
+2. Ask Cursor: **Apply all copy from copy/COPY-v2.md to index.html**
+3. Preview by double-clicking `index.html`; push to GitHub when the live site should update.
+
+`COPY-v2.md` is synced from `index.html` when they drift. After editing the doc, always apply before previewing deploy changes.
+
 ## Conventions
 
 - Spaced hyphen ` - ` in copy, not em dash
+- Case study tags use middle dot ` · ` (e.g. Hard tech · Sensors)

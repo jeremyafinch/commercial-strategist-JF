@@ -1,13 +1,14 @@
-# Site copy master document — V2 (FROZEN)
+# Site copy master document — V3 (active)
 # Jeremy Finch - Commercial Strategist Site
-# Frozen: June 2026 — do not edit. Snapshot: archive/v2/
+# Branched from V2 freeze: June 2026
 #
-# For active copy edits use copy/COPY-v3.md → root index.html
-# Maps to: archive/v2/index.html
-# Preview: archive/v2/index.html or https://work.jeremyafinch.com/archive/v2/
-# Archive: copy/COPY-v1.md → archive/v1/index.html
+# SOURCE OF TRUTH: Edit copy here only. Do not edit prose in index.html directly.
+# Maps to: index.html (root)
+# Preview: double-click index.html in the project folder
+# Frozen V2: copy/COPY-v2.md + archive/v2/
+# Archive V1: copy/COPY-v1.md → archive/v1/index.html
 #
-# Apply to site: "Apply all copy from copy/COPY-v2.md to index.html"
+# Apply to site: "Apply all copy from copy/COPY-v3.md to index.html"
 # Punctuation: spaced hyphen ( - ), never em dash or en dash.
 # Tags use middle dot ( · ), not hyphen.
 
@@ -94,7 +95,7 @@
 |----------|------|------|
 | `work.teradar.tag` | Tag | Hard tech · Sensors |
 | `work.teradar.title` | Title | TeraDAR |
-| `work.teradar.body` | Body | TeraDAR had a compelling, differentiated technology but needed investor funding to get started. I worked closely with the CEO to design their seed-stage narrative, investor pitch deck, and technical appendix materials. I also provided communications coaching across 60+ investor meetings. The $2M+ seed round closed oversubscribed. This work carried through a Series A and into a $150M Series B round, eventually expanding into technical product marketing video production and custom CES assets as the company matured and exited stealth. |
+| `work.teradar.body` | Body | TeraDAR had a compelling technology but needed investor funding to get started. I worked closely with their CEO to design the seed-stage narrative, investor pitch deck, and technical appendix. I also provided communications coaching across 60+ investor meetings. The seed round closed oversubscribed. That work carried through a Series A and into a $150M Series B round, eventually expanding into technical product marketing video production and custom CES assets as the company matured. |
 | `work.teradar.quote` | Quote (placeholder) | Testimonial quote from TeraDAR - coming soon |
 | `work.teradar.quote.meta` | Quote meta | Matt Carey, CEO, Teradar |
 | `work.teradar.pill.01` | Pill | Investor narrative |
@@ -108,7 +109,7 @@
 |----------|------|------|
 | `work.lux.tag` | Tag | Hard tech · Materials science |
 | `work.lux.title` | Title | Lux Labs |
-| `work.lux.body` | Body | Lux Labs was commercializing a new transparent display materials - they had real technology, high web traffic, and some early customers, but their go-to-market architecture wasn't built for conversion or scale. I simplified a 30-SKU catalog to two core offerings, rebuilt the pricing model and designed persona-based e-commerce flows around clear customer outcomes rather than dense technical specs. Project delivered 100% ROI within six weeks through improved gross margins and simplified operations. The pricing and packaging structure remained intact through acquisition. |
+| `work.lux.body` | Body | Lux Labs was commercializing a breakthrough transparent display materials - they had real technology, high web traffic, and some early customers, but their go-to-market architecture wasn't built for scale. I simplified a 30-SKU catalog to two core offerings, rebuilt the pricing model and designed persona-based e-commerce flows around customer outcomes rather than dense technical specs. Project delivered 100% ROI within six weeks through improved gross margins and simplified operations. The pricing and packaging structure stayed intact through its acquisition, validating our B2B / B2C segmentation. |
 | `work.lux.quote` | Quote | Lux Labs hired Jeremy to support our ClearBright product launch. He helped us overhaul our e-commerce approach by redesigning our website, simplifying our pricing and packaging, and creating new marketing content. He helped us step back and evaluate how to communicate with our customers. |
 | `work.lux.quote.meta` | Quote meta | Spencer Powers, CEO, Lux Labs |
 | `work.lux.pill.01` | Pill | Go-to-market |
@@ -122,7 +123,7 @@
 |----------|------|------|
 | `work.reframe.tag` | Tag | Hard tech · Robotics |
 | `work.reframe.title` | Title | Reframe Systems |
-| `work.reframe.body` | Body | Reframe Systems is building custom robotics and software for prefab construction - an entrenched industry, resistant to change. The founders are brilliant and the technology is real, but the story was proving difficult to convey to outside audiences. Rather than write the story for them, I coached one of the cofounders to tell it himself - on camera, authentically, in his own words. The video became a recruiting asset, a partner conversation opener, and a GTM leave-behind simultaneously. |
+| `work.reframe.body` | Body | Reframe Systems is building custom robotics and software tools for prefab construction - a technically innovative solution in an entrenched industry, resistant to change. The founders are brilliant and the technology is real, but the story was proving difficult to convey to outside audiences. Rather than write the story for them, I coached one of the cofounders to tell it himself - on camera, in his own words. What came out was something polished copy could never replicate: a founder who sounds authentically like himself. The video became a recruiting asset, a partner conversation opener, and a GTM leave-behind simultaneously. Sometimes the right format changes everything. |
 | `work.reframe.video` | Embed URL | https://www.youtube.com/embed/FPPJ4673UKQ |
 | `work.reframe.pill.01` | Pill | Founder narrative |
 | `work.reframe.pill.02` | Pill | Video |
@@ -135,7 +136,7 @@
 
 | LOCATION | Tag | Body | Pills |
 |----------|-----|------|-------|
-| `work.additional.01` | Pre-IPO investor roadshow | Produced an S-1 investor roadshow video series for a private tech company preparing to file go public. End-to-end production with Opalite Media, from narrative strategy through final delivery. | Investor strategy · Video production |
+| `work.additional.01` | Pre-IPO investor roadshow | Produced an investor roadshow video series for a private tech company preparing to file an S-1 to go public. End-to-end production with Opalite Media, from narrative strategy through final delivery. | Investor strategy · Video production |
 | `work.additional.02` | Medical device for connected care (via Altitude) | User research and product roadmapping for a global medical device manufacturer's fall alert and aging-in-place line. In-home interviews with seniors and caregivers, competitive audits, and due diligence on adoption and trust. | User research · M&A roadmapping |
 | `work.additional.03` | Consumer appliance usability research (via Altitude) | Usability research with industrial designers and mechanical engineers for a major home appliance manufacturer - food prep behaviors, cutting workflows, in-kitchen tool performance. Testing and market research to guide good product design. | Usability testing · Market research |
 
@@ -146,7 +147,7 @@
 | LOCATION | Type | Copy |
 |----------|------|------|
 | `contact.body.01` | Body | If your technology is genuine but the commercial story is still being figured out - that gap is solvable. But closing it earlier is always worth more than closing it later. |
-| `contact.body.02` | Body | Working with scientists and engineers who have spent years - or careers - on a single hard problem is not a task I take lightly. My job is to make sure that work is understood, fully believed, and backed by the people who can help bring it into the world. |
+| `contact.body.02` | Body | Working with scientists and engineers who have spent years - or careers - on a single hard problem is not a task I take lightly. My job is to make sure that work is fully understood, believed, and backed by the people who can help bring it into the world. |
 | `contact.availability` | Body | Open to FT roles or advisory work where commercial strategy is part of the build. |
 | `contact.closing` | Body | I'd love to hear what you're building. |
 | `contact.cta` | Button | Book a call → |
