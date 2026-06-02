@@ -1652,16 +1652,20 @@ body.page-v2 .pov__link-wrap {
   gap: 4px;
 }
 
-.page-v4 .logo-bar--compact {
+.page-v4 .hero .logo-bar--compact {
   margin-top: 0;
+  padding-top: 0;
   text-align: center;
 }
 
 .page-v4 .logo-bar--compact .logo-bar__img {
+  display: block;
   width: 100%;
-  max-width: none;
+  height: 28px;
   max-height: 28px;
+  aspect-ratio: auto;
   object-fit: contain;
+  object-position: center;
   opacity: 0.3;
 }
 
@@ -1674,20 +1678,21 @@ body.page-v2 .pov__link-wrap {
 }
 
 .page-v4.panel-idle .intent-hub__item {
-  padding-block: 20px;
-  padding-inline: var(--space-card-padding);
-  padding-right: calc(var(--space-card-padding) + 20px);
+  padding: 20px var(--space-card-padding);
   border-width: 1.5px;
   border-style: dashed;
   background: var(--color-bg);
 }
 
-.page-v4.has-panel .intent-hub__item {
-  padding-right: calc(var(--space-card-padding) + 20px);
+.page-v4 .intent-hub__row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--stack-tight);
 }
 
-.page-v4.panel-idle .intent-hub__go {
-  bottom: 20px;
+.page-v4.has-panel .intent-hub__item {
+  padding: var(--space-card-padding);
 }
 
 .page-v4 .intent-hub__grid {
@@ -1731,12 +1736,12 @@ body.page-v2 .pov__link-wrap {
 
 .page-v4 .intent-hub__desc {
   margin: 0;
+  flex: 1;
+  min-width: 0;
 }
 
 .page-v4 .intent-hub__go {
-  position: absolute;
-  right: var(--space-card-padding);
-  bottom: var(--space-card-padding);
+  flex-shrink: 0;
   font-family: var(--font-mono);
   font-size: var(--type-ui);
   line-height: 1;
@@ -1792,6 +1797,7 @@ body.page-v2 .pov__link-wrap {
   }
 
   .page-v4 .logo-bar--compact .logo-bar__img {
+    height: 24px;
     max-height: 24px;
   }
 
