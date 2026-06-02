@@ -687,12 +687,11 @@ button.work-card {
 
 .logo-bar__img {
   display: block;
-  width: 100%;
-  max-width: 600px;
+  width: min(100%, 560px);
   height: auto;
-  aspect-ratio: 9100 / 1068;
+  aspect-ratio: 3220 / 455;
   object-fit: contain;
-  object-position: left center;
+  object-position: center center;
   filter: grayscale(100%);
   opacity: 0.4;
 }
@@ -1000,8 +999,8 @@ button.work-card {
   }
 
   .logo-bar__img {
+    width: min(100%, 560px);
     max-width: 100%;
-    width: 100%;
     height: auto;
     max-height: none;
   }
