@@ -61,7 +61,7 @@ Default panel: **none** (visitor chooses). Hash URLs: `#pov`, `#examples`, `#con
 | `hero.headline.primary` | Headline | You're the expert in the technology. |
 | `hero.headline.accent` | Headline | Let's make it legible to capital and customers. |
 | `hero.pitch.01` | Body | Seed-to-Series B commercial narrative and technical GTM for B2B hard tech startups. |
-| `hero.pitch.02` | Body | I partner with founders and deep domain experts to translate technical depth into the commercial clarity you need to raise, hire, partner, grow, and sell. |
+| `hero.pitch.02` | Body | I partner with founders and deep domain experts to translate technical depth into the commercial clarity needed to raise, hire, partner, grow, and sell. |
 | `hero.pitch.03` | Body | Building something new, high-value, and hard-to-explain? |
 | `hero.chat` | Link | Let's chat → #connect (opens Connect panel) |
 | `hero.cta` | — | Removed on V4 idle landing; use Connect box or Let's chat link |
@@ -78,7 +78,7 @@ Default panel: **none** (visitor chooses). Hash URLs: `#pov`, `#examples`, `#con
 | `pov.eyebrow` | Eyebrow | Point of view |
 | `pov.kicker` | Kicker | Marketing isn't just the last mile. |
 | `pov.headline` | Headline (uppercase on site) | If you wait until it's ready, you're already too late. |
-| `pov.body.01` | Body | The worst time to figure out your market story is when you urgently need it. But many engineers treat marketing as something to bolt on at the very end, when the product is fully finished. In hard tech, this costs you valuable time and runway. |
+| `pov.body.01` | Body | When development cycles last 5-10 years and capital requirements run into the tens of millions, your market story cannot be just a launch asset. It should be a design input - one that shapes what you build, who you hire, and whether money shows up in time. |
 | `pov.link` | Link (end of section) | Read the essay → https://docs.google.com/document/d/1mXTznBJsOwonMlEeezdZjcLEiznj_ob5lOBihiWzF_Y/edit?usp=sharing |
 
 ### POV cards
@@ -94,7 +94,7 @@ Default panel: **none** (visitor chooses). Hash URLs: `#pov`, `#examples`, `#con
 
 | LOCATION | Type | Copy |
 |----------|------|------|
-| `pov.body.02` | Body (after cards) | When development cycles last 5-10 years and capital requirements run into the tens of millions, your market story cannot be just a launch asset. It should be a design input - one that shapes what you build, who you hire, and whether money shows up in time. |
+| `pov.body.02` | Body (after cards) | Marketing is what helps everyone else care as much about your tech as you do. |
 
 ---
 
@@ -102,7 +102,7 @@ Default panel: **none** (visitor chooses). Hash URLs: `#pov`, `#examples`, `#con
 
 | LOCATION | Type | Copy |
 |----------|------|------|
-| `two-kinds.headline` | Headline | There are two kinds of marketing (both matter). |
+| `two-kinds.headline` | Headline | There are **two** kinds of marketing (both matter). |
 | `two-kinds.table.col.foundational` | Table header | Foundational marketing |
 | `two-kinds.table.col.episodic` | Table header | Episodic marketing |
 | `two-kinds.table.foundational` | Table cell | The first is **foundational**. Why should this company exist? Who is the user, the buyer, and the economic customer? What are you displacing, and what will a rational buyer need to say yes? These are the load-bearing elements of your initial commercial architecture. |
@@ -115,8 +115,8 @@ Default panel: **none** (visitor chooses). Hash URLs: `#pov`, `#examples`, `#con
 
 | LOCATION | Type | Copy |
 |----------|------|------|
-| `work.eyebrow` | Eyebrow | Selected work |
-| `work.subhead` | Subhead | Recent engagements |
+| `work.eyebrow` | Eyebrow | Previous work |
+| `work.subhead` | Subhead | Select engagements |
 | `work.intro` | Body | Sensors, new materials, robotics etc. |
 
 ### Case study: Teradar
@@ -139,7 +139,7 @@ Default panel: **none** (visitor chooses). Hash URLs: `#pov`, `#examples`, `#con
 |----------|------|------|
 | `work.lux.tag` | Tag | Hard tech · Materials science |
 | `work.lux.title` | Title | Lux Labs |
-| `work.lux.body` | Body | Lux Labs was commercializing a transparent display film - with a [proven technology](https://www.nature.com/articles/ncomms4152) and decent website traffic. But a 30-SKU catalog and spec-heavy data sheets slowed conversion and sales. I reduced the catalog to two main SKUs and mapped e-commerce flows to use cases instead of materials specs. It improved gross margins and simplified fulfillment. Pricing model remained in place through acquisition. |
+| `work.lux.body` | Body | Lux Labs was commercializing a transparent display film - with [proven technology](https://www.nature.com/articles/ncomms4152) and decent website traffic. But a 30-SKU catalog and spec-heavy data sheets slowed conversion and hurt sales. I reduced the catalog to two main SKUs and mapped e-commerce flows to customer use cases instead of materials specs. We improved gross margins and simplified fulfillment. The pricing model remained in place through acquisition. |
 | `work.lux.quote` | Quote | Lux Labs hired Jeremy to support our ClearBright product launch. He helped us overhaul our e-commerce approach, simplified our pricing and packaging, and created new marketing content. He helped us step back and evaluate how to communicate with our customers... He makes offsite collaboration a breeze by sending recorded video explanations, which helped us make decisions quicker and implement them rather than wasting time between meetings. |
 | `work.lux.quote.meta` | Quote meta | Spencer Powers, CEO, Lux Labs |
 | `work.lux.pill.01` | Pill | Go-to-market |
@@ -153,7 +153,7 @@ Default panel: **none** (visitor chooses). Hash URLs: `#pov`, `#examples`, `#con
 |----------|------|------|
 | `work.reframe.tag` | Tag | Hard tech · Robotics |
 | `work.reframe.title` | Title | Reframe Systems |
-| `work.reframe.body` | Body | [Reframe Systems](https://www.reframe.systems/) builds prefab homes using robotics and custom software - an innovative model in a slow-moving industry. Their gap was storytelling, not technology. I coached one of Reframe's founders (Aaron) through an unscripted on-camera interview so he could separate the "what" from the "how" authentically in his own words. The video was used for recruiting, partner introductions, and as a general GTM asset. |
+| `work.reframe.body` | Body | [Reframe Systems](https://www.reframe.systems/) builds prefab homes using robotics and custom software - an innovative approach in a slow-moving industry. But their gap was storytelling, not technology. I coached one of Reframe's founders (Aaron) through an unscripted on-camera interview so he could separate the "what" from the "how" authentically in his own words. The video is used for recruiting, partner introductions, and as a general GTM asset. |
 | `work.reframe.video` | Embed URL | https://www.youtube.com/embed/FPPJ4673UKQ |
 | `work.reframe.pill.01` | Pill | Founder narrative |
 | `work.reframe.pill.02` | Pill | Video |
@@ -166,7 +166,7 @@ Default panel: **none** (visitor chooses). Hash URLs: `#pov`, `#examples`, `#con
 
 | LOCATION | Tag | Body | Pills |
 |----------|-----|------|-------|
-| `work.additional.01` | Pre-IPO investor roadshow | Investor roadshow video series for a private tech company preparing to file for IPO (S-1) - narrative strategy through video delivery with [Opalite Media](https://portfolio.jeremyafinch.com/#video). The same narrative discipline for VCs also extends to public markets. | Investor strategy · Video production |
+| `work.additional.01` | Pre-IPO investor roadshow | Investor roadshow video series for a private tech company preparing to file an S-1. Narrative strategy through video delivery with [Opalite Media](https://portfolio.jeremyafinch.com/#video). The same messaging discipline for VCs also extends to public markets. | Investor strategy · Video production |
 | `work.additional.02` | Connected-care devices ([Altitude](https://portfolio.jeremyafinch.com/#altitude)) | User research and investment roadmapping for a global medical device manufacturer's physical fall-alert and aging-in-place line. Included in-home interviews, competitive audits, and adoption due diligence. | User research · M&A roadmapping |
 | `work.additional.03` | Physical product research ([Altitude](https://portfolio.jeremyafinch.com/#altitude)) | Usability research with industrial designers and mechanical engineers to inform design for a major consumer appliance OEM - evaluated in-kitchen food prep, cutting workflows, and product performance. | Usability testing · Market research |
 
@@ -180,7 +180,7 @@ Default panel: **none** (visitor chooses). Hash URLs: `#pov`, `#examples`, `#con
 | `contact.body.02` | Body | Working with scientists and engineers who have spent years - or careers - on a single hard problem is not a task I take lightly. My job is to make sure that work is understood, fully believed, and backed by the people who can help bring it into the world. |
 | `contact.availability` | Body | Open to advisory or select FT roles where commercial strategy is part of the build. |
 | `contact.closing` | Body |  |
-| `contact.location` | Body | What are you developing? |
+| `contact.location` | Body | What are you building? |
 | `contact.cta` | Button | Let's connect → |
 | `contact.cta.url` | URL | https://calendly.com/jeremyfinch_meeting/ |
 
@@ -190,7 +190,7 @@ Default panel: **none** (visitor chooses). Hash URLs: `#pov`, `#examples`, `#con
 
 | LOCATION | Copy |
 |----------|------|
-| `footer.brand` | Jeremy Finch · Boston, MA |
+| `footer.brand` | Boston, MA |
 | `footer.link.linkedin` | LinkedIn → https://www.linkedin.com/in/jeremyfinch/ |
 | `footer.link.video` | Video call → https://calendly.com/jeremyfinch_meeting/ |
 | `footer.link.website` | Website → https://jeremyafinch.com/ |

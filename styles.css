@@ -1636,7 +1636,7 @@ body.page-v2 .pov__link-wrap {
   border-bottom: 1px solid var(--color-border);
 }
 
-.page-v4.panel-idle .site-nav__links {
+.page-v4 .site-nav__links {
   display: none;
 }
 

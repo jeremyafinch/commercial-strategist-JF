@@ -28,11 +28,15 @@
   function setIdleState() {
     document.body.classList.add("panel-idle");
     document.body.classList.remove("has-panel");
+    var nav = document.querySelector(".site-nav__links");
+    if (nav) nav.hidden = true;
   }
 
   function setOpenState() {
     document.body.classList.remove("panel-idle");
     document.body.classList.add("has-panel");
+    var nav = document.querySelector(".site-nav__links");
+    if (nav) nav.hidden = false;
   }
 
   function clearHash() {
