@@ -1,37 +1,44 @@
 ---
-description: Default to root index.html (V3); versioned copy in copy/
+description: Production is frozen V3 on main; active draft is branch v4
 alwaysApply: true
 ---
 
-# Working draft is root index.html (V3)
+# Production (main) = frozen V3
 
 | Role | Path |
 |------|------|
-| HTML | `index.html` |
-| Copy | `copy/COPY-v3.md` |
-| Styles | `styles.css` (layout scoped to `.page-v2` until V3 CSS fork) |
-| Images | `img/` |
+| Live HTML | `index.html` (do not edit on `main` except production hotfixes) |
+| Copy | `copy/COPY-v3.md` (frozen on `main`) |
+| Archive snapshot | `archive/v3/` |
+| Git tag | `v3.0` |
 
-## Frozen / archive (edit only when asked)
+## Active development (V4)
+
+Check out branch **`v4`** before editing the site draft:
+
+```bash
+git checkout v4
+```
+
+On `v4`: edit `copy/COPY-v4.md` → apply to root `index.html`. Pushing `v4` does **not** change the live site. Merge to `main` only when ready to ship V4.
+
+## Frozen / archive
 
 | Version | HTML | Copy |
 |---------|------|------|
-| V2 | `archive/v2/index.html` | `copy/COPY-v2.md` (frozen) |
+| V3 | `archive/v3/index.html` | `copy/COPY-v3.md` |
+| V2 | `archive/v2/index.html` | `copy/COPY-v2.md` |
 | V1 | `archive/v1/index.html` | `copy/COPY-v1.md` |
 
 ## Redirects
 
-- `/v3/` → `/` (current draft)
+- `/` → production (V3 on `main` until V4 ships)
+- `/v3/` → `/archive/v3/`
 - `/v2/` → `/archive/v2/`
 - `/v1/` → `/archive/v1/`
-
-## Copy workflow (single source of truth)
-
-1. Edit prose in `copy/COPY-v3.md` only — not in `index.html`.
-2. Ask Cursor: **Apply all copy from copy/COPY-v3.md to index.html**
-3. Preview by double-clicking `index.html`; push to GitHub when the live site should update.
 
 ## Conventions
 
 - Spaced hyphen ` - ` in copy, not em dash
-- Case study tags use middle dot ` · ` (e.g. Hard tech · Sensors)
+- Case study tags use middle dot ` · `
+- Company name: Teradar (capital T only)

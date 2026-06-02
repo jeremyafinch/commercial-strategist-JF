@@ -1,12 +1,10 @@
-# Site copy master document  -  V3 (FROZEN)
+# Site copy master document  -  V3 (active)
 # Jeremy Finch - Commercial Strategist Site
 # Branched from V2 freeze: June 2026
-# Frozen: June 2026 — do not edit on `main`. Snapshot: archive/v3/
 #
-# Production copy on `main` (matches this file until V4 ships).
-# Active development: branch `v4` → copy/COPY-v4.md → root index.html
-# Maps to: index.html (root) and archive/v3/index.html
-# Preview archive: https://work.jeremyafinch.com/archive/v3/
+# SOURCE OF TRUTH: Edit copy here only. Do not edit prose in index.html directly.
+# Maps to: index.html (root)
+# Preview: double-click index.html in the project folder
 # Frozen V2: copy/COPY-v2.md + archive/v2/
 # Archive V1: copy/COPY-v1.md → archive/v1/index.html
 #
