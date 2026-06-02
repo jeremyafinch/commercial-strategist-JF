@@ -32,15 +32,15 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="page-v2">
+<body class="page-v2 page-v4 panel-idle">
 
   <header class="site-nav" role="banner">
     <div class="site-nav__inner">
       <a class="site-nav__brand" href="#hero">Jeremy Finch</a>
-      <nav class="site-nav__links" aria-label="Page sections">
-        <a class="site-nav__link" href="#point-of-view">Point of view</a>
-        <a class="site-nav__link" href="#selected-work">Work</a>
-        <a class="site-nav__link" href="#contact">Contact</a>
+      <nav class="site-nav__links" aria-label="Explore">
+        <a class="site-nav__link" href="#pov" data-panel="pov">POV</a>
+        <a class="site-nav__link" href="#examples" data-panel="examples">Examples</a>
+        <a class="site-nav__link" href="#connect" data-panel="connect">Connect</a>
       </nav>
     </div>
   </header>
@@ -63,15 +63,12 @@
           <div class="hero-intro__content">
             <div class="hero__pitch">
               <p class="prose">Seed-to-Series B commercial narrative and technical GTM for B2B hard tech startups.</p>
-              <p class="prose">I partner with founders and deep domain experts to translate technical depth into the commercial clarity you need to raise, hire, partner, grow, and sell.</p>
+              <p class="prose">I partner with founders and deep domain experts to translate technical depth into the commercial clarity needed to raise, hire, partner, grow, and sell.</p>
               <p class="prose hero__focus">Building something new, high-value, and hard-to-explain?</p>
+              <p class="hero__chat-wrap">
+                <a class="hero__chat-link" href="#connect" data-panel="connect">Let's chat</a>
+              </p>
             </div>
-
-            <p class="hero__cta-wrap">
-              <a class="cta" href="https://calendly.com/jeremyfinch_meeting/" target="_blank" rel="noopener noreferrer">
-                Let's connect →
-              </a>
-            </p>
           </div>
 
           <div class="hero-intro__photo">
@@ -82,31 +79,47 @@
               width="480"
               height="600"
             >
-            <a
-              class="hero-intro__photo-caption"
-              href="https://www.linkedin.com/in/jeremyfinch/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Jeremy</a>
+
+            <div class="logo-bar logo-bar--compact" aria-label="Previously: Altitude, Adobe, and MIT Sloan">
+              <img
+                class="logo-bar__img"
+                src="img/logos.png"
+                alt=""
+                width="3220"
+                height="455"
+              >
+            </div>
           </div>
 
         </div>
 
-        <div class="logo-bar" aria-label="Previously">
-          <span class="logo-bar__label">Previously</span>
-          <img
-            class="logo-bar__img"
-            src="img/logos.png"
-            alt="Altitude, Adobe, and MIT Sloan"
-            width="3220"
-            height="455"
-          >
+        <div class="intent-hub" aria-label="Choose what to explore">
+          <div class="intent-hub__grid card-grid card-grid--pov">
+            <button type="button" class="intent-hub__item card pov-card" data-panel="pov">
+              <span class="intent-hub__label">POV</span>
+              <p class="intent-hub__desc pov-card__text">What I believe about hard tech marketing.</p>
+              <span class="intent-hub__go" aria-hidden="true">→</span>
+            </button>
+            <button type="button" class="intent-hub__item card pov-card" data-panel="examples">
+              <span class="intent-hub__label">Examples</span>
+              <p class="intent-hub__desc pov-card__text">Prior engagements and experience.</p>
+              <span class="intent-hub__go" aria-hidden="true">→</span>
+            </button>
+            <button type="button" class="intent-hub__item card pov-card" data-panel="connect">
+              <span class="intent-hub__label">Connect</span>
+              <p class="intent-hub__desc pov-card__text">Let's chat about what you're building.</p>
+              <span class="intent-hub__go" aria-hidden="true">→</span>
+            </button>
+          </div>
         </div>
 
       </div>
     </section>
 
-    <!-- SECTION 2 - POINT OF VIEW -->
+    <div id="panel-stack" class="panel-stack" hidden>
+
+    <!-- PANEL: POV -->
+    <div id="panel-pov" class="site-panel" hidden>
     <section id="point-of-view" class="section section--follow-hero" aria-labelledby="pov-headline">
       <div class="section__inner">
 
@@ -119,7 +132,7 @@
         </h2>
 
         <p class="prose">
-          The worst time to figure out your market story is when you urgently need it. But many engineers treat marketing as something to bolt on at the very end, when the product is fully finished. In hard tech, this costs you valuable time and runway.
+          When development cycles last 5-10 years and capital requirements run into the tens of millions, your market story cannot be just a launch asset. It should be a design input - one that shapes what you build, who you hire, and whether money shows up in time.
         </p>
 
         <div class="card-grid card-grid--pov">
@@ -157,7 +170,7 @@
         </div>
 
         <p class="prose">
-          When development cycles last 5-10 years and capital requirements run into the tens of millions, your market story cannot be just a launch asset. It should be a design input - one that shapes what you build, who you hire, and whether money shows up in time.
+          Marketing is what helps everyone else care as much about your tech as you do.
         </p>
 
         <p class="pov__link-wrap">
@@ -176,7 +189,7 @@
     <section id="two-kinds" class="section" aria-labelledby="two-kinds-headline">
       <div class="section__inner">
 
-        <h2 id="two-kinds-headline" class="section-headline headline">There are two kinds of marketing (both matter).</h2>
+        <h2 id="two-kinds-headline" class="section-headline headline">There are <strong>two</strong> kinds of marketing (both matter).</h2>
 
         <div class="two-kinds__table-wrap">
           <table class="two-kinds__table">
@@ -207,13 +220,18 @@
       </div>
     </section>
 
+    </div><!-- /panel-pov -->
+
+    <!-- PANEL: EXAMPLES -->
+    <div id="panel-examples" class="site-panel" hidden>
+
     <!-- SECTION 4 - SELECTED WORK -->
-    <section id="selected-work" class="section section--surface" aria-labelledby="work-eyebrow">
+    <section id="selected-work" class="section section--surface section--follow-hero" aria-labelledby="work-eyebrow">
       <div class="section__inner">
 
-        <span id="work-eyebrow" class="eyebrow">Selected work</span>
+        <span id="work-eyebrow" class="eyebrow">Previous work</span>
 
-        <p class="work__subhead">Recent engagements</p>
+        <p class="work__subhead">Select engagements</p>
 
         <p class="prose work__intro">Sensors, new materials, robotics etc.</p>
 
@@ -339,7 +357,7 @@
                 </div>
               </figure>
 
-              <p class="prose work-featured__body">Lux Labs was commercializing a transparent display film - with a <a href="https://www.nature.com/articles/ncomms4152" target="_blank" rel="noopener noreferrer">proven technology</a> and decent website traffic. But a 30-SKU catalog and spec-heavy data sheets slowed conversion and sales. I reduced the catalog to two main SKUs and mapped e-commerce flows to use cases instead of materials specs. It improved gross margins and simplified fulfillment. Pricing model remained in place through acquisition.</p>
+              <p class="prose work-featured__body">Lux Labs was commercializing a transparent display film - with a <a href="https://www.nature.com/articles/ncomms4152" target="_blank" rel="noopener noreferrer">proven technology</a> and decent website traffic. But a 30-SKU catalog and spec-heavy data sheets slowed conversion and hurt sales. I reduced the catalog to two main SKUs and mapped e-commerce flows to customer use cases instead of materials specs. We improved gross margins and simplified fulfillment. The pricing model remained in place through acquisition.</p>
 
               <div class="work-featured__quote" aria-label="Client quote">
                 <p class="work-featured__quote-text">&ldquo;Lux Labs hired Jeremy to support our ClearBright product launch. He helped us overhaul our e-commerce approach, simplified our pricing and packaging, and created new marketing content. He helped us step back and evaluate how to communicate with our customers&hellip; He makes offsite collaboration a breeze by sending recorded video explanations, which helped us make decisions quicker and implement them rather than wasting time between meetings.&rdquo;</p>
@@ -372,7 +390,7 @@
                 </div>
               </figure>
 
-              <p class="prose work-featured__body"><a href="https://www.reframe.systems/" target="_blank" rel="noopener noreferrer">Reframe Systems</a> builds prefab homes using robotics and custom software - an innovative model in a slow-moving industry. Their gap was storytelling, not technology. I coached one of Reframe's founders (Aaron) through an unscripted on-camera interview so he could separate the &ldquo;what&rdquo; from the &ldquo;how&rdquo; authentically in his own words. The video was used for recruiting, partner introductions, and as a general GTM asset.</p>
+              <p class="prose work-featured__body"><a href="https://www.reframe.systems/" target="_blank" rel="noopener noreferrer">Reframe Systems</a> builds prefab homes using robotics and custom software - an innovative approach in a slow-moving industry. But their gap was storytelling, not technology. I coached one of Reframe's founders (Aaron) through an unscripted on-camera interview so he could separate the &ldquo;what&rdquo; from the &ldquo;how&rdquo; authentically in his own words. The video is used for recruiting, partner introductions, and as a general GTM asset.</p>
 
               <div class="work-featured__pills" aria-label="Services">
                 <span class="pill">Founder narrative</span>
@@ -388,7 +406,7 @@
           <ul class="work-additional__list">
             <li class="work-additional__item">
               <span class="work-additional__tag">Pre-IPO investor roadshow</span>
-              <p class="work-additional__text">Investor roadshow video series for a private tech company preparing to file for IPO (S-1) - narrative strategy through video delivery with <a href="https://portfolio.jeremyafinch.com/#video" target="_blank" rel="noopener noreferrer">Opalite Media</a>. The same narrative discipline for VCs also extends to public markets.</p>
+              <p class="work-additional__text">Investor roadshow video series for a private tech company preparing to file an S-1. Narrative strategy through video delivery with <a href="https://portfolio.jeremyafinch.com/#video" target="_blank" rel="noopener noreferrer">Opalite Media</a>. The same messaging discipline for VCs also extends to public markets.</p>
               <div class="work-featured__pills" aria-label="Services">
                 <span class="pill">Investor strategy</span>
                 <span class="pill">Video production</span>
@@ -416,8 +434,13 @@
       </div>
     </section>
 
+    </div><!-- /panel-examples -->
+
+    <!-- PANEL: CONNECT -->
+    <div id="panel-connect" class="site-panel" hidden>
+
     <!-- SECTION 5 - CLOSE / CTA -->
-    <section id="contact" class="section" aria-labelledby="contact-closing">
+    <section id="contact" class="section section--follow-hero" aria-labelledby="contact-closing">
       <div class="section__inner">
 
         <p class="prose">
@@ -430,7 +453,7 @@
 
         <p class="contact__availability prose">Open to advisory or select FT roles where commercial strategy is part of the build.</p>
 
-        <p id="contact-closing" class="prose contact__location">What are you developing?</p>
+        <p id="contact-closing" class="prose contact__location">What are you building?</p>
 
         <p class="contact__cta-wrap">
           <a class="cta" href="https://calendly.com/jeremyfinch_meeting/" target="_blank" rel="noopener noreferrer">
@@ -440,6 +463,10 @@
 
       </div>
     </section>
+
+    </div><!-- /panel-connect -->
+
+    </div><!-- /panel-stack -->
 
   </main>
 
@@ -460,6 +487,7 @@
     </div>
   </footer>
 
+  <script src="panels.js"></script>
   <script src="work-carousel.js"></script>
 </body>
 </html>

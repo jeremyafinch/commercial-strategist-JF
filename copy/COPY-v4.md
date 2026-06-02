@@ -30,9 +30,26 @@
 | LOCATION | Copy |
 |----------|------|
 | `nav.brand` | Jeremy Finch |
-| `nav.pov` | Point of view |
-| `nav.work` | Work |
-| `nav.contact` | Contact |
+| `nav.pov` | POV |
+| `nav.examples` | Examples |
+| `nav.connect` | Connect |
+
+---
+
+## Intent hub (in hero, after intro)
+
+No eyebrow label. Empty state until a path is chosen (direct hash links still open the matching panel).
+
+| LOCATION | Type | Copy |
+|----------|------|------|
+| `hub.pov.label` | Label | POV |
+| `hub.pov.desc` | Body | What I believe about hard tech marketing. |
+| `hub.examples.label` | Label | Examples |
+| `hub.examples.desc` | Body | Prior engagements and experience. |
+| `hub.connect.label` | Label | Connect |
+| `hub.connect.desc` | Body | Let's chat about what you're building. |
+
+Default panel: **none** (visitor chooses). Hash URLs: `#pov`, `#examples`, `#connect`.
 
 ---
 
@@ -46,10 +63,10 @@
 | `hero.pitch.01` | Body | Seed-to-Series B commercial narrative and technical GTM for B2B hard tech startups. |
 | `hero.pitch.02` | Body | I partner with founders and deep domain experts to translate technical depth into the commercial clarity you need to raise, hire, partner, grow, and sell. |
 | `hero.pitch.03` | Body | Building something new, high-value, and hard-to-explain? |
-| `hero.cta` | Button | Let's connect → |
-| `hero.cta.url` | URL | https://calendly.com/jeremyfinch_meeting/ |
-| `hero.photo.caption` | Link | Jeremy → https://www.linkedin.com/in/jeremyfinch/ |
-| `hero.logos.label` | Eyebrow | Previously |
+| `hero.chat` | Link | Let's chat → #connect (opens Connect panel) |
+| `hero.cta` | — | Removed on V4 idle landing; use Connect box or Let's chat link |
+| `hero.photo.alt` | Alt text | Jeremy Finch |
+| `hero.logos` | Logos only (no label) | Altitude, Adobe, MIT Sloan — under headshot, compact |
 | `hero.logos.alt` | Image alt | Altitude, Adobe, and MIT Sloan |
 
 ---
