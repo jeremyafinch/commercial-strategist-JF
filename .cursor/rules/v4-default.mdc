@@ -1,0 +1,41 @@
+---
+description: Default to root index.html (V4 draft on branch v4)
+alwaysApply: true
+---
+
+# Working draft is root index.html (V4)
+
+**Branch:** `v4` only. Pushing this branch does not update the live site (`main` = frozen V3).
+
+| Role | Path |
+|------|------|
+| HTML | `index.html` |
+| Copy | `copy/COPY-v4.md` |
+| Styles | `styles.css` (layout scoped to `.page-v2` until V4 CSS fork) |
+| Images | `img/` |
+
+## Frozen / archive (edit only when asked)
+
+| Version | HTML | Copy |
+|---------|------|------|
+| V3 | `archive/v3/index.html` | `copy/COPY-v3.md` (frozen) |
+| V2 | `archive/v2/index.html` | `copy/COPY-v2.md` |
+| V1 | `archive/v1/index.html` | `copy/COPY-v1.md` |
+
+## Redirects (production on main)
+
+- `/` → V3 on `main` until V4 merges
+- `/v3/` → `/archive/v3/`
+- `/v2/` → `/archive/v2/`
+
+## Copy workflow
+
+1. Edit prose in `copy/COPY-v4.md` only — not in `index.html`.
+2. Ask Cursor: **Apply all copy from copy/COPY-v4.md to index.html**
+3. Preview by double-clicking `index.html`. Merge to `main` when ready to ship V4.
+
+## Conventions
+
+- Spaced hyphen ` - ` in copy, not em dash
+- Tags use middle dot ` · `
+- Company name: Teradar (capital T only)

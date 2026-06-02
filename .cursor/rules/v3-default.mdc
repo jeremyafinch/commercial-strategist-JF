@@ -1,6 +1,6 @@
 ---
 description: Production is frozen V3 on main; active draft is branch v4
-alwaysApply: true
+alwaysApply: false
 ---
 
 # Production (main) = frozen V3
