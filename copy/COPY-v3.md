@@ -44,7 +44,7 @@
 | `hero.headline.accent` | Headline | Let's make it legible to capital and customers. |
 | `hero.pitch.01` | Body | Seed-to-Series B commercial narrative and technical GTM for B2B hard tech startups. |
 | `hero.pitch.02` | Body | I partner with founders and deep domain experts to translate technical depth into the commercial clarity you need to raise, hire, partner, grow, and sell. |
-| `hero.pitch.03` | Body | Building something high-value and hard-to-explain? |
+| `hero.pitch.03` | Body | Building something new, high-value, and hard-to-explain? |
 | `hero.cta` | Button | Let's connect → |
 | `hero.cta.url` | URL | https://calendly.com/jeremyfinch_meeting/ |
 | `hero.photo.caption` | Link | Jeremy → https://www.linkedin.com/in/jeremyfinch/ |
@@ -108,7 +108,8 @@
 | `work.teradar.tag` | Tag | Hard tech · Sensors |
 | `work.teradar.title` | Title | Teradar |
 | `work.teradar.body` | Body | [Teradar](https://teradar.com/) had terahertz sensing technology and deep silicon expertise. The founders wanted to raise a seed round. I worked with the CEO on their pitch deck and investor narrative, and did 1:1 communications coaching through 50+ meetings. The $2M+ seed round closed oversubscribed. That same foundation supported a Series A, a $150M [Series B](https://techcrunch.com/2025/11/12/teradar-exits-stealth-with-an-all-weather-sensor-for-autonomy-and-150m-in-funding/), and expanded to later technical product video engagements and CES launch assets. |
-| `work.teradar.quote` | Quote | (omit until ready) |
+| `work.teradar.quote` | Quote | Testimonial quote - coming soon. |
+| `work.teradar.quote.meta` | Quote meta | Matt Carey, CEO, Teradar |
 | `work.teradar.pill.01` | Pill | Investor narrative |
 | `work.teradar.pill.02` | Pill | Technical marketing |
 | `work.teradar.image.01` | Carousel image | img/work-teradar-techcrunch-feature.png |
@@ -121,7 +122,7 @@
 | `work.lux.tag` | Tag | Hard tech · Materials science |
 | `work.lux.title` | Title | Lux Labs |
 | `work.lux.body` | Body | Lux Labs was commercializing a transparent display film - with a [proven technology](https://www.nature.com/articles/ncomms4152) and decent website traffic. But a 30-SKU catalog and spec-heavy data sheets slowed conversion and sales. I reduced the catalog to two main SKUs and mapped e-commerce flows to use cases instead of materials specs. It improved gross margins and simplified fulfillment. Pricing model remained in place through acquisition. |
-| `work.lux.quote` | Quote | Lux Labs hired Jeremy to support our ClearBright product launch. He helped us overhaul our e-commerce approach, simplified our pricing and packaging, and created new marketing content. He helped us step back and evaluate how to communicate with our customers... Jeremy makes offsite collaboration a breeze by sending recorded video explanations, which helped us make decisions quicker and implement them rather than wasting time between meetings. |
+| `work.lux.quote` | Quote | Lux Labs hired Jeremy to support our ClearBright product launch. He helped us overhaul our e-commerce approach, simplified our pricing and packaging, and created new marketing content. He helped us step back and evaluate how to communicate with our customers... He makes offsite collaboration a breeze by sending recorded video explanations, which helped us make decisions quicker and implement them rather than wasting time between meetings. |
 | `work.lux.quote.meta` | Quote meta | Spencer Powers, CEO, Lux Labs |
 | `work.lux.pill.01` | Pill | Go-to-market |
 | `work.lux.pill.02` | Pill | Pricing strategy |
@@ -134,7 +135,7 @@
 |----------|------|------|
 | `work.reframe.tag` | Tag | Hard tech · Robotics |
 | `work.reframe.title` | Title | Reframe Systems |
-| `work.reframe.body` | Body | [Reframe Systems](https://www.reframe.systems/) builds prefab homes using robotics and custom software - strong technology in a slow, entrenched industry. The gap was storytelling, not technology. I coached one of Reframe's founders (Aaron) through an unscripted on-camera interview so he could separate the "what" from the "how" authentically in his own words. The video was used for recruiting, partner introductions, and as a general GTM asset. |
+| `work.reframe.body` | Body | [Reframe Systems](https://www.reframe.systems/) builds prefab homes using robotics and custom software - an innovative model in a slow-moving industry. Their gap was storytelling, not technology. I coached one of Reframe's founders (Aaron) through an unscripted on-camera interview so he could separate the "what" from the "how" authentically in his own words. The video was used for recruiting, partner introductions, and as a general GTM asset. |
 | `work.reframe.video` | Embed URL | https://www.youtube.com/embed/FPPJ4673UKQ |
 | `work.reframe.pill.01` | Pill | Founder narrative |
 | `work.reframe.pill.02` | Pill | Video |

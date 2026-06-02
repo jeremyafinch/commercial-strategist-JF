@@ -1231,6 +1231,42 @@ body.page-v2 .pov__link-wrap {
   max-width: none;
 }
 
+.page-v2 .prose a:not(.cta):not(.pov__link),
+.page-v2 .work-additional__text a,
+.page-v2 .work-additional__tag a,
+.page-v2 .work-additional__heading a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(17, 17, 17, 0.18);
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease, text-decoration-thickness 0.15s ease;
+}
+
+.page-v2 .prose a:not(.cta):not(.pov__link):hover,
+.page-v2 .work-additional__text a:hover,
+.page-v2 .work-additional__tag a:hover,
+.page-v2 .work-additional__heading a:hover {
+  color: var(--color-text-primary);
+  text-decoration-color: var(--color-text-primary);
+  text-decoration-thickness: 1.5px;
+}
+
+.page-v2 .work-additional__tag a,
+.page-v2 .work-additional__heading a {
+  color: inherit;
+}
+
+.page-v2 .work-additional__tag a {
+  text-decoration-color: rgba(136, 136, 136, 0.45);
+}
+
+.page-v2 .work-additional__tag a:hover,
+.page-v2 .work-additional__heading a:hover {
+  color: var(--color-text-primary);
+  text-decoration-color: var(--color-text-primary);
+}
+
 .page-v2 .work-featured__quote--placeholder .work-featured__quote-text {
   color: var(--color-text-muted);
 }
@@ -1350,12 +1386,22 @@ body.page-v2 .pov__link-wrap {
   .page-v2 .work-carousel__chevron {
     font-size: 20px;
   }
+
+  .page-v2 .work-featured__visual--video .work-inline-video {
+    width: min(100%, calc(min(240px, 56vw) * 16 / 9));
+  }
+}
+
+.page-v2 .work-featured__visual--video {
+  display: flex;
+  justify-content: center;
 }
 
 .page-v2 .work-featured__visual--video .work-inline-video {
-  width: 100%;
+  position: relative;
+  width: min(100%, calc(min(320px, 62vw) * 16 / 9));
   aspect-ratio: 16 / 9;
-  max-height: min(280px, 52vw);
+  margin-inline: auto;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 3px;
@@ -1363,7 +1409,8 @@ body.page-v2 .pov__link-wrap {
 }
 
 .page-v2 .work-inline-video iframe {
-  display: block;
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   border: 0;
